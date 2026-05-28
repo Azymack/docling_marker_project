@@ -98,8 +98,71 @@ Console prints a table of time and recall per document.
 - **Pipeline init** — exclude from per-document SLA if you keep the converter process warm in production.
 - **PARTIAL_SUCCESS** — some pages failed (often `std::bad_alloc` on CPU/low RAM). Outputs and recall are still written; recall marked with `*` in the table. Use GPU + enough RAM for full Health PDFs.
 
-## Next steps (not in this script)
+## Microservice (GPU server)
 
-- Scanned PDFs: re-run with `do_ocr=True` and RapidOCR torch backend.
-- Structured JSON: send `output.md` to an LLM with a schema, then compare to fixtures.
+HTTP API that converts an uploaded PDF and returns **plain text** in the response body (markdown string) for the next pipeline stage.
+
+### Start the service
+
+```bash
+export DOCLING_DEVICE=cuda
+export DOCLING_LAYOUT_BATCH_SIZE=64
+export DOCLING_FORCE_BACKEND_TEXT=true
+export DOCLING_TABLE_MODE=accurate
+
+uvicorn service.app:app --host 0.0.0.0 --port 8000
+```
+
+Default pipeline (OCR off) loads at startup (~6–10 s). OCR-on pipeline loads on first `ocr=true` request.
+
+```bash
+curl http://localhost:8000/ready
+```
+
+### Convert a PDF → text (for next stage)
+
+```bash
+# Text-selectable PDF (default) — response body is the extracted text
+curl -X POST "http://localhost:8000/v1/convert" \
+  -F "file=@test_fixtures/Health/1.pdf"
+
+# Scanned PDF — enable OCR
+curl -X POST "http://localhost:8000/v1/convert?ocr=true" \
+  -F "file=@scanned.pdf"
+
+# JSON: { "text": "...", "metadata": { pages, timing, ocr, ... } }
+curl -X POST "http://localhost:8000/v1/convert?format=json" \
+  -F "file=@test_fixtures/Health/1.pdf"
+```
+
+| Query param | Default | Description |
+|-------------|---------|-------------|
+| `ocr` | `false` | `true` = OCR for scanned/image PDFs |
+| `format` | `text` | `text` = raw body; `json` = `{ "text", "metadata" }` |
+
+Response headers (`format=text`): `X-Docling-Status`, `X-Docling-Pages`, `X-Docling-Seconds`, `X-Docling-OCR`.
+
+| Endpoint | Purpose |
+|----------|---------|
+| `GET /health` | Liveness |
+| `GET /ready` | Models loaded |
+| `POST /v1/convert` | PDF upload → text |
+
+Environment variables:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DOCLING_DEVICE` | `cuda` | `cuda`, `cpu`, `auto` |
+| `DOCLING_LAYOUT_BATCH_SIZE` | `64` | GPU layout batch |
+| `DOCLING_FORCE_BACKEND_TEXT` | `true` | Embedded PDF text when OCR off |
+| `DOCLING_DO_OCR` | `false` | Default pipeline at startup if `true` |
+| `DOCLING_TABLE_MODE` | `accurate` | `accurate` or `fast` |
+| `SERVICE_MAX_UPLOAD_MB` | `50` | Max upload size |
+
+One request runs at a time per process (GPU lock). Scale with multiple workers/replicas if needed.
+
+## Next steps
+
+- Scanned PDFs: set `DOCLING_DO_OCR=true` and configure RapidOCR torch backend.
+- Structured JSON: send markdown from the service to an LLM with your schema.
 - Compare with Marker or other pipelines in the same repo layout.

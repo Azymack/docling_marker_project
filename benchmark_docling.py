@@ -27,19 +27,18 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
-from docling.datamodel.accelerator_options import AcceleratorDevice, AcceleratorOptions
-from docling.datamodel.base_models import ConversionStatus, InputFormat
-from docling.datamodel.pipeline_options import (
-    TableFormerMode,
-    ThreadedPdfPipelineOptions,
+from docling.datamodel.base_models import InputFormat
+
+from docling_pipeline import (
+    ConversionError,
+    PipelineConfig,
+    build_converter,
+    convert_pdf,
+    cuda_info,
+    initialize_converter,
 )
-from docling.document_converter import DocumentConverter, PdfFormatOption
-from docling.pipeline.threaded_standard_pdf_pipeline import ThreadedStandardPdfPipeline
 
 _log = logging.getLogger("benchmark_docling")
-
-# Statuses that still produce a document worth benchmarking
-_OK_STATUSES = {ConversionStatus.SUCCESS, ConversionStatus.PARTIAL_SUCCESS}
 
 
 # ---------------------------------------------------------------------------
@@ -162,63 +161,6 @@ def discover_fixtures(fixtures_root: Path) -> list[PdfFixture]:
 
 
 # ---------------------------------------------------------------------------
-# Docling converter (text PDF profile: no OCR, GPU layout)
-# ---------------------------------------------------------------------------
-
-
-def _map_device(name: str) -> AcceleratorDevice:
-    mapping = {
-        "cuda": AcceleratorDevice.CUDA,
-        "cpu": AcceleratorDevice.CPU,
-        "auto": AcceleratorDevice.AUTO,
-        "mps": AcceleratorDevice.MPS,
-    }
-    key = name.lower()
-    if key not in mapping:
-        raise ValueError(f"Unknown device {name!r}; use one of {list(mapping)}")
-    return mapping[key]
-
-
-def build_converter(
-    *,
-    device: str,
-    layout_batch_size: int,
-    ocr_batch_size: int,
-    table_batch_size: int,
-    do_table_structure: bool,
-    table_mode: str,
-    force_backend_text: bool,
-    num_threads: int,
-) -> DocumentConverter:
-    accelerator = AcceleratorOptions(device=_map_device(device))
-    table_enum = (
-        TableFormerMode.FAST
-        if table_mode.lower() == "fast"
-        else TableFormerMode.ACCURATE
-    )
-
-    pipeline_options = ThreadedPdfPipelineOptions(
-        accelerator_options=accelerator,
-        ocr_batch_size=ocr_batch_size,
-        layout_batch_size=layout_batch_size,
-        table_batch_size=table_batch_size,
-        do_ocr=False,
-        do_table_structure=do_table_structure,
-        force_backend_text=force_backend_text,
-    )
-    pipeline_options.table_structure_options.mode = table_enum
-
-    return DocumentConverter(
-        format_options={
-            InputFormat.PDF: PdfFormatOption(
-                pipeline_cls=ThreadedStandardPdfPipeline,
-                pipeline_options=pipeline_options,
-            )
-        }
-    )
-
-
-# ---------------------------------------------------------------------------
 # Benchmark run
 # ---------------------------------------------------------------------------
 
@@ -266,26 +208,18 @@ def _write_text(path: Path, content: str) -> None:
 
 
 def _print_cuda_info() -> None:
-    try:
-        import torch
-
-        if torch.cuda.is_available():
-            idx = torch.cuda.current_device()
-            name = torch.cuda.get_device_name(idx)
-            props = torch.cuda.get_device_properties(idx)
-            vram_gb = props.total_memory / (1024**3)
-            _log.info(
-                "CUDA: %s (device %s, %.1f GB VRAM, torch %s, cuda %s)",
-                name,
-                idx,
-                vram_gb,
-                torch.__version__,
-                torch.version.cuda,
-            )
-        else:
-            _log.warning("torch.cuda.is_available() is False — Docling will fall back as configured")
-    except ImportError:
-        _log.warning("PyTorch not installed; cannot report CUDA device info")
+    info = cuda_info()
+    if info.get("available"):
+        _log.info(
+            "CUDA: %s (device %s, %.1f GB VRAM, torch %s, cuda %s)",
+            info["name"],
+            info["device_index"],
+            info["vram_gb"],
+            info["torch_version"],
+            info["cuda_version"],
+        )
+    else:
+        _log.warning("CUDA not available — Docling will use configured device")
 
 
 def run_benchmark(args: argparse.Namespace) -> int:
@@ -302,7 +236,7 @@ def run_benchmark(args: argparse.Namespace) -> int:
     _log.info("Found %d PDF fixture(s) under %s", len(fixtures), fixtures_root)
     _print_cuda_info()
 
-    converter = build_converter(
+    pipeline_config = PipelineConfig(
         device=args.device,
         layout_batch_size=args.layout_batch_size,
         ocr_batch_size=args.ocr_batch_size,
@@ -310,13 +244,10 @@ def run_benchmark(args: argparse.Namespace) -> int:
         do_table_structure=not args.no_tables,
         table_mode=args.table_mode,
         force_backend_text=args.force_backend_text,
-        num_threads=args.num_threads,
     )
+    converter = build_converter(pipeline_config)
 
-    # One-time pipeline init (model download/load)
-    t0 = time.perf_counter()
-    converter.initialize_pipeline(InputFormat.PDF)
-    init_seconds = time.perf_counter() - t0
+    init_seconds = initialize_converter(converter)
     _log.info("Pipeline initialized in %.2f s", init_seconds)
 
     if args.warmup and fixtures:
@@ -337,32 +268,30 @@ def run_benchmark(args: argparse.Namespace) -> int:
 
         t1 = time.perf_counter()
         try:
-            conv = converter.convert(str(fx.pdf_path))
-            elapsed = time.perf_counter() - t1
-            status = conv.status.name if conv.status else "UNKNOWN"
-            pages = len(conv.pages) if conv.pages else 0
-
-            warnings: list[str] = []
-            if conv.status not in _OK_STATUSES:
+            try:
+                result = convert_pdf(converter, fx.pdf_path)
+            except ConversionError as conv_exc:
+                elapsed = time.perf_counter() - t1
                 doc_results.append(
                     DocumentResult(
                         category=fx.category,
                         name=fx.stem,
                         pdf_path=str(fx.pdf_path),
-                        status=status,
-                        pages=pages,
+                        status=conv_exc.status,
+                        pages=conv_exc.pages,
                         convert_seconds=round(elapsed, 3),
-                        pages_per_second=round(pages / elapsed, 3) if elapsed > 0 and pages else None,
-                        error=f"Conversion status: {status}",
+                        pages_per_second=None,
+                        error=str(conv_exc),
                     )
                 )
                 continue
 
-            if conv.status == ConversionStatus.PARTIAL_SUCCESS:
-                warnings.append("partial_success_some_pages_failed")
-
-            markdown = conv.document.export_to_markdown()
-            doc_dict = conv.document.export_to_dict()
+            elapsed = result.convert_seconds
+            status = result.status
+            pages = result.pages
+            warnings = list(result.warnings)
+            markdown = result.markdown
+            doc_dict = result.doc_dict or {}
 
             _write_text(doc_out / "output.md", markdown)
             with (doc_out / "output_docling.json").open("w", encoding="utf-8") as f:
@@ -377,7 +306,7 @@ def run_benchmark(args: argparse.Namespace) -> int:
                 all_hits += accuracy["fields_found"]
                 all_evaluated += accuracy["fields_evaluated"]
 
-            pps = round(pages / elapsed, 3) if elapsed > 0 and pages else None
+            pps = result.pages_per_second
             total_convert += elapsed
             total_pages += pages
 
