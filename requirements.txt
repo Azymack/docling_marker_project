@@ -1,0 +1,5 @@
+# Docling PDF benchmark — install PyTorch with CUDA *before* or right after this file.
+# On CUDA 12.x (e.g. 12.9 driver), use a recent cu12x wheel, for example:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+docling>=2.50.0
+pydantic>=2.0
