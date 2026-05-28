@@ -1,0 +1,34 @@
+{
+  "fields_evaluated": 20,
+  "fields_skipped_empty": 27,
+  "fields_found": 19,
+  "fields_missing": 1,
+  "recall": 0.95,
+  "hit_fields": [
+    "Plan Name",
+    "In-Network Single Deductible",
+    "In-Network Family Deductible",
+    "Out-of-Network Single Deductible",
+    "Out-of-Network Family Deductible",
+    "In-Network Annual Maximum",
+    "Out-of-Network Annual Maximum",
+    "In-Network Cleanings",
+    "In-Network Exams",
+    "In-Network X-Rays",
+    "In-Network Sealants",
+    "In-Network Fillings",
+    "In-Network Simple Extractions",
+    "In-Network Root Canal",
+    "In-Network Periodontal Gum Disease",
+    "In-Network Oral Surgery",
+    "In-Network Crowns",
+    "In-Network Orthodontia",
+    "Plan Year"
+  ],
+  "misses": [
+    {
+      "field": "Carrier Name",
+      "expected": "HealthChoice"
+    }
+  ]
+}

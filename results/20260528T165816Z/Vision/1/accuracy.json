@@ -1,0 +1,33 @@
+{
+  "fields_evaluated": 23,
+  "fields_skipped_empty": 1,
+  "fields_found": 23,
+  "fields_missing": 0,
+  "recall": 1.0,
+  "hit_fields": [
+    "Carrier Name",
+    "Plan Name",
+    "In-Network Eye Exam",
+    "Out-of-Network Eye Exam",
+    "In-Network Single Vision Lens",
+    "Out-of-Network Single Vision Lens",
+    "In-Network Lined Bi-Focal Lens",
+    "Out-of-Network Lined Bi-Focal Lens",
+    "In-Network Lined Tri-Focal Lens",
+    "Out-of-Network Lined Tri-Focal Lens",
+    "In-Network Lenticular Lens",
+    "Out-of-Network Lenticular Lens",
+    "In-Network Contact Lens Allowance",
+    "Out-of-Network Contact Lens Allowance",
+    "In-Network Frame Allowance",
+    "Out-of-Network Frame Allowance",
+    "Exam Frequency",
+    "Lens Frequency",
+    "Frame Frequency",
+    "Plan Year",
+    "Network Name",
+    "Member Website",
+    "Customer Service Phone Number"
+  ],
+  "misses": []
+}
