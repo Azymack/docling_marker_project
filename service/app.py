@@ -2,7 +2,7 @@
 Docling PDF → text microservice.
 
 Run:
-  uvicorn service.app:app --host 0.0.0.0 --port 8000
+  uvicorn service.app:app --host 0.0.0.0 --port 8001
 """
 
 from __future__ import annotations
@@ -133,15 +133,35 @@ app = FastAPI(
     description="Convert insurance PDFs to plain text (markdown) for downstream processing.",
     version="1.1.0",
     lifespan=lifespan,
+    openapi_tags=[
+        {"name": "conversion", "description": "PDF upload → text (use in your pipeline)"},
+        {"name": "health", "description": "Liveness and readiness"},
+    ],
 )
 
 
-@app.get("/health")
+@app.get("/", tags=["health"])
+def root() -> dict:
+    """Identify this service and list endpoints (useful if /docs shows unexpected routes)."""
+    return {
+        "service": "docling_marker_project",
+        "title": app.title,
+        "version": app.version,
+        "docs": "/docs",
+        "endpoints": {
+            "convert": "POST /v1/convert",
+            "ready": "GET /ready",
+            "health": "GET /health",
+        },
+    }
+
+
+@app.get("/health", tags=["health"])
 def health() -> dict:
     return {"status": "ok"}
 
 
-@app.get("/ready")
+@app.get("/ready", tags=["health"])
 def ready() -> dict:
     if not _ready:
         raise HTTPException(status_code=503, detail="Pipeline not ready")
@@ -166,6 +186,9 @@ def ready() -> dict:
 
 @app.post(
     "/v1/convert",
+    tags=["conversion"],
+    summary="Convert PDF to text",
+    operation_id="convert_pdf",
     responses={
         200: {
             "description": "Plain text body (default) or JSON with text + metadata",

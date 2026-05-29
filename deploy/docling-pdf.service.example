@@ -1,0 +1,45 @@
+# systemd unit for Docling PDF service
+#
+# Install:
+#   1. Edit paths/user/port below, save as:
+#        /etc/systemd/system/docling-pdf.service
+#   2. sudo systemctl daemon-reload
+#   3. sudo systemctl enable --now docling-pdf
+#   4. curl http://127.0.0.1:8001/ready
+
+[Unit]
+Description=Docling PDF to text microservice (GPU)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=eb3-brayan
+Group=eb3-brayan
+WorkingDirectory=/home/eb3-brayan/docling_marker_project
+
+# Use the project venv — not ~/.local/bin/uvicorn
+Environment=PATH=/home/eb3-brayan/docling_marker_project/venv/bin:/usr/bin:/bin
+Environment=DOCLING_DEVICE=cuda
+Environment=DOCLING_LAYOUT_BATCH_SIZE=64
+Environment=DOCLING_FORCE_BACKEND_TEXT=true
+Environment=DOCLING_TABLE_MODE=accurate
+# Environment=CUDA_VISIBLE_DEVICES=0
+
+ExecStart=/home/eb3-brayan/docling_marker_project/venv/bin/python -m uvicorn service.app:app --host 0.0.0.0 --port 8001
+
+# Model load can take several minutes on first boot
+TimeoutStartSec=600
+
+Restart=on-failure
+RestartSec=10
+
+# One GPU worker per process (app uses an internal convert lock)
+# Do not raise uvicorn --workers above 1 unless you run multiple GPUs/replicas.
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=docling-pdf
+
+[Install]
+WantedBy=multi-user.target

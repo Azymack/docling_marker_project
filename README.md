@@ -1,108 +1,36 @@
-# Docling insurance PDF benchmark
+# Docling PDF service
 
-Benchmark [Docling](https://github.com/docling-project/docling) on the insurance PDF fixtures in `test_fixtures/`, measuring **processing time** and **field-level text recall** against the paired JSON ground truth.
+GPU microservice that converts insurance PDFs to **plain text** (markdown) for a downstream extraction step (LLM, rules, etc.).
 
-**Assumption for this phase:** all PDFs are **text-selectable** (embedded text layer). OCR is disabled (`do_ocr=False`).
+This service does **not** return structured fields (`Carrier Name`, deductibles, …). It only runs **stage 1** of the pipeline.
 
-## What gets measured
+## Pipeline
 
-| Metric | Description |
-|--------|-------------|
-| Pipeline init | One-time model load before any PDF |
-| Per-PDF time | Seconds and pages/second per document |
-| Field recall | For each non-empty value in the fixture JSON, whether that text appears in Docling’s markdown output |
+```
+PDF  →  POST /v1/convert (this service)  →  text string
+       →  your next stage (LLM / API)     →  JSON (e.g. test_fixtures/*.json)
+```
 
-Field recall is a **proxy** for extraction quality: it checks that plan values (deductibles, copays, etc.) are present in Docling’s text. A later LLM or rules step would map that text into structured JSON.
+| Stage | Responsibility |
+|-------|----------------|
+| **This service** | PDF → `text` (tables and headings as markdown) |
+| **Your next stage** | `text` → structured JSON matching your schema |
 
-## GPU server setup (CUDA 12.x / 12.9)
+Use `test_fixtures/*.json` as the target schema for stage 2, not as output from this API.
 
-Use Python 3.10–3.12 and a virtual environment.
+## Setup (GPU server)
 
 ```bash
 cd docling_marker_project
-python -m venv .venv
-source .venv/bin/activate   # Linux
-# .venv\Scripts\activate    # Windows
+python -m venv venv
+source venv/bin/activate
 
-# PyTorch with CUDA 12.x wheels (driver 12.9 works with cu126/cu128 builds)
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
-
 pip install -r requirements.txt
-```
 
-Verify GPU:
-
-```bash
+python -c "import docling; print('docling ok')"
 python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0))"
 ```
-
-First run downloads layout/table models (~GB); allow network access once.
-
-## Run benchmark
-
-```bash
-# Recommended: GPU, accurate tables, warmup, native PDF text
-python benchmark_docling.py \
-  --device cuda \
-  --layout-batch-size 64 \
-  --table-mode accurate \
-  --force-backend-text \
-  --warmup \
-  -v
-```
-
-Lower VRAM (e.g. 8–12 GB): use `--layout-batch-size 16`.
-
-Speed-only (tables off, not recommended for accuracy):
-
-```bash
-python benchmark_docling.py --device cuda --no-tables --warmup
-```
-
-CPU baseline:
-
-```bash
-python benchmark_docling.py --device cpu --warmup
-```
-
-## Outputs
-
-Each run creates `results/<UTC-timestamp>/`:
-
-```
-results/20260528T120000Z/
-  summary.json              # timings + aggregate recall
-  Health/1/
-    output.md               # Docling markdown
-    output_docling.json     # structured document
-    timing.json
-    accuracy.json           # per-field hits/misses
-  Dental/1/
-  ...
-```
-
-Console prints a table of time and recall per document.
-
-## Fixtures
-
-| Folder | PDFs | Ground truth |
-|--------|------|--------------|
-| `test_fixtures/Health/` | 5 | `*.json` |
-| `test_fixtures/Dental/` | 2 | `*.json` |
-| `test_fixtures/Vision/` | 2 | `*.json` |
-
-## Interpreting results
-
-- **Pages/second** — compare GPU vs CPU and batch sizes; Docling docs cite ~4–8 pg/s (standard pipeline, no OCR) on recent GPUs for similar workloads.
-- **Field recall** — aim high before adding structured extraction. Misses often mean values live only in table cells, images, or odd formatting; try `--table-mode accurate` and avoid `--no-tables`.
-- **Pipeline init** — exclude from per-document SLA if you keep the converter process warm in production.
-- **PARTIAL_SUCCESS** — some pages failed (often `std::bad_alloc` on CPU/low RAM). Outputs and recall are still written; recall marked with `*` in the table. Use GPU + enough RAM for full Health PDFs.
-
-## Microservice (GPU server)
-
-HTTP API that converts an uploaded PDF and returns **plain text** in the response body (markdown string) for the next pipeline stage.
-
-### Start the service
 
 ```bash
 export DOCLING_DEVICE=cuda
@@ -110,59 +38,194 @@ export DOCLING_LAYOUT_BATCH_SIZE=64
 export DOCLING_FORCE_BACKEND_TEXT=true
 export DOCLING_TABLE_MODE=accurate
 
-uvicorn service.app:app --host 0.0.0.0 --port 8000
+python -m uvicorn service.app:app --host 0.0.0.0 --port 8001
 ```
 
-Default pipeline (OCR off) loads at startup (~6–10 s). OCR-on pipeline loads on first `ocr=true` request.
+Use **`python -m uvicorn`**, not `~/.local/bin/uvicorn`, so the venv that has `docling` is used.
 
 ```bash
-curl http://localhost:8000/ready
+which python   # .../venv/bin/python
+python -m uvicorn service.app:app --host 0.0.0.0 --port 8001
 ```
 
-### Convert a PDF → text (for next stage)
+Wait until models are loaded:
 
 ```bash
-# Text-selectable PDF (default) — response body is the extracted text
-curl -X POST "http://localhost:8000/v1/convert" \
-  -F "file=@test_fixtures/Health/1.pdf"
-
-# Scanned PDF — enable OCR
-curl -X POST "http://localhost:8000/v1/convert?ocr=true" \
-  -F "file=@scanned.pdf"
-
-# JSON: { "text": "...", "metadata": { pages, timing, ocr, ... } }
-curl -X POST "http://localhost:8000/v1/convert?format=json" \
-  -F "file=@test_fixtures/Health/1.pdf"
+curl http://localhost:8001/ready
 ```
 
-| Query param | Default | Description |
-|-------------|---------|-------------|
-| `ocr` | `false` | `true` = OCR for scanned/image PDFs |
-| `format` | `text` | `text` = raw body; `json` = `{ "text", "metadata" }` |
+First startup downloads models (~GB). Default pipeline is OCR-off (~6–10 s). OCR-on loads on the first `ocr=true` request.
 
-Response headers (`format=text`): `X-Docling-Status`, `X-Docling-Pages`, `X-Docling-Seconds`, `X-Docling-OCR`.
+### Confirm you are on **this** service
 
-| Endpoint | Purpose |
-|----------|---------|
-| `GET /health` | Liveness |
-| `GET /ready` | Models loaded |
-| `POST /v1/convert` | PDF upload → text |
+`/docs` should list only **3** application endpoints. If you see many other routes (e.g. `/v1/chunk`, `/documents`, jobs), another app is on that port (often **docling-serve**), not `service.app:app`.
 
-Environment variables:
+```bash
+curl -s http://localhost:8001/ | jq .
+# Expect: "service": "docling_marker_project", "endpoints.convert": "POST /v1/convert"
+
+curl -s http://localhost:8001/openapi.json | jq '.info.title, (.paths | keys)'
+# Expect title "Docling PDF Service" and paths: "/", "/health", "/ready", "/v1/convert"
+```
+
+In Swagger (`/docs`), the page title must be **Docling PDF Service**. **POST /v1/convert** is under the **conversion** tag. The long **Schemas** section at the bottom is JSON models, not extra APIs.
+
+## API for the next stage
+
+### Endpoints
+
+| Method | Path | Use |
+|--------|------|-----|
+| `GET` | `/ready` | Call once before batch jobs — must return `200` |
+| `POST` | **`/v1/convert`** | **Main API** — upload PDF, get text |
+| `GET` | `/health` | Process liveness only |
+
+### `POST /v1/convert`
+
+**Request**
+
+- Body: `multipart/form-data`, field name **`file`** (PDF bytes)
+- Query params:
+
+| Param | Default | Description |
+|-------|---------|-------------|
+| `format` | `text` | `json` recommended for code — see below |
+| `ocr` | `false` | `true` for scanned/image PDFs; `false` for text-selectable PDFs |
+
+**Response (`format=json`)** — use this in automated pipelines:
+
+```json
+{
+  "text": "# Plan summary\n\n| Deductible | $1,650 |\n...",
+  "metadata": {
+    "status": "SUCCESS",
+    "pages": 8,
+    "convert_seconds": 3.35,
+    "pages_per_second": 2.39,
+    "warnings": [],
+    "ocr": false,
+    "source_filename": "plan.pdf"
+  }
+}
+```
+
+Pass **`text`** to your LLM or extractor. Ignore structured insurance fields until stage 2.
+
+**Response (`format=text`)** — body is the string only (`text/plain`). Optional headers: `X-Docling-Status`, `X-Docling-Pages`, `X-Docling-Seconds`, `X-Docling-OCR`.
+
+**Errors**
+
+| Status | Meaning |
+|--------|---------|
+| `503` | Service or pipeline not ready |
+| `422` | Conversion failed |
+| `413` | File over `SERVICE_MAX_UPLOAD_MB` |
+
+### Python example (stage 1 → stage 2)
+
+```python
+import requests
+
+DOCLING_URL = "http://gpu-host:8001"
+
+def pdf_to_text(pdf_path: str, *, ocr: bool = False) -> str:
+    with open(pdf_path, "rb") as f:
+        r = requests.post(
+            f"{DOCLING_URL}/v1/convert",
+            params={"format": "json", "ocr": ocr},
+            files={"file": (pdf_path.rsplit("/", 1)[-1], f, "application/pdf")},
+            timeout=300,
+        )
+    r.raise_for_status()
+    return r.json()["text"]
+
+
+def process_plan(pdf_path: str, plan_type: str) -> dict:
+    document_text = pdf_to_text(pdf_path, ocr=False)
+    # Stage 2: your LLM / API — schema from test_fixtures/{Health,Dental,Vision}/*.json
+    return your_extractor(document_text, plan_type=plan_type)
+```
+
+### curl
+
+```bash
+# Extract text for inspection
+curl -s -X POST "http://localhost:8001/v1/convert?format=json&ocr=false" \
+  -F "file=@test_fixtures/Health/1.pdf" \
+  | jq -r '.text' | head -50
+```
+
+### Batch flow
+
+```
+1. GET /ready  → 200
+2. For each PDF:
+     POST /v1/convert?format=json&ocr=false  →  text
+     your stage-2 service(text, schema)       →  JSON
+```
+
+One conversion at a time per process (GPU lock). Scale with multiple replicas if needed.
+
+## Run permanently (systemd)
+
+On Linux GPU servers, use **systemd** so the service starts on boot and restarts after crashes.
+
+**1. Copy and edit the unit file** (paths, user, port):
+
+```bash
+cp deploy/docling-pdf.service.example /tmp/docling-pdf.service
+nano /tmp/docling-pdf.service   # set User, WorkingDirectory, ExecStart paths, port
+sudo cp /tmp/docling-pdf.service /etc/systemd/system/docling-pdf.service
+```
+
+**2. Enable and start**
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable docling-pdf
+sudo systemctl start docling-pdf
+```
+
+**3. Check status and logs**
+
+```bash
+sudo systemctl status docling-pdf
+journalctl -u docling-pdf -f
+curl http://127.0.0.1:8001/ready
+curl http://127.0.0.1:8001/
+```
+
+**Useful commands**
+
+| Command | Purpose |
+|---------|---------|
+| `sudo systemctl restart docling-pdf` | Restart after code/config change |
+| `sudo systemctl stop docling-pdf` | Stop service |
+| `journalctl -u docling-pdf -n 100` | Last 100 log lines |
+
+**Notes**
+
+- First start can take **several minutes** (model download/load). `TimeoutStartSec=600` in the unit file allows for that.
+- Keep **one process per GPU** (`--workers 1`). The app serializes conversions with a lock.
+- After `git pull`, run `sudo systemctl restart docling-pdf`.
+- Open the port in your firewall only if other machines must call the API (e.g. `ufw allow 8001/tcp`).
+
+**Optional: reverse proxy** — put nginx in front for TLS and auth; proxy `POST /v1/convert` to `http://127.0.0.1:8001`.
+
+## Configuration
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `DOCLING_DEVICE` | `cuda` | `cuda`, `cpu`, `auto` |
-| `DOCLING_LAYOUT_BATCH_SIZE` | `64` | GPU layout batch |
-| `DOCLING_FORCE_BACKEND_TEXT` | `true` | Embedded PDF text when OCR off |
-| `DOCLING_DO_OCR` | `false` | Default pipeline at startup if `true` |
+| `DOCLING_LAYOUT_BATCH_SIZE` | `64` | Layout batch size (lower if low VRAM) |
+| `DOCLING_FORCE_BACKEND_TEXT` | `true` | Embedded PDF text when OCR is off |
 | `DOCLING_TABLE_MODE` | `accurate` | `accurate` or `fast` |
 | `SERVICE_MAX_UPLOAD_MB` | `50` | Max upload size |
 
-One request runs at a time per process (GPU lock). Scale with multiple workers/replicas if needed.
+## Local evaluation (optional)
 
-## Next steps
+`benchmark_docling.py` runs Docling on `test_fixtures/` PDFs and reports speed plus field-level text recall vs the JSON fixtures. Use it to tune GPU settings, not as the production API.
 
-- Scanned PDFs: set `DOCLING_DO_OCR=true` and configure RapidOCR torch backend.
-- Structured JSON: send markdown from the service to an LLM with your schema.
-- Compare with Marker or other pipelines in the same repo layout.
+```bash
+python benchmark_docling.py --device cuda --layout-batch-size 64 --force-backend-text --warmup
+```
