@@ -58,6 +58,8 @@ First startup downloads models (~GB). Default pipeline is OCR-off (~6–10 s). O
 
 ## API for the next stage
 
+**Full usage guide:** [docs/CONVERT_API_GUIDE.md](docs/CONVERT_API_GUIDE.md) (curl, Python, OCR modes, errors, examples).
+
 ### Endpoints
 
 | Method | Path | Use |
