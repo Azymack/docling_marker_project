@@ -1,4 +1,4 @@
-"""Shared Docling PDF → markdown pipeline (text-selectable PDFs, OCR off)."""
+"""Shared Docling PDF → markdown pipeline."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ import os
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 from docling.datamodel.accelerator_options import AcceleratorDevice, AcceleratorOptions
 from docling.datamodel.base_models import ConversionStatus, InputFormat
@@ -18,7 +18,22 @@ from docling.datamodel.pipeline_options import (
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.pipeline.threaded_standard_pdf_pipeline import ThreadedStandardPdfPipeline
 
+OcrMode = Literal["off", "auto", "full"]
 OK_STATUSES = {ConversionStatus.SUCCESS, ConversionStatus.PARTIAL_SUCCESS}
+
+
+def parse_ocr_mode(value: str | bool) -> OcrMode:
+    """Normalize API / env values to off | auto | full."""
+    if isinstance(value, bool):
+        return "auto" if value else "off"
+    v = str(value).lower().strip()
+    if v in ("false", "0", "off", "no", "none"):
+        return "off"
+    if v in ("full", "force", "all", "force_full"):
+        return "full"
+    if v in ("true", "1", "auto", "yes", "on"):
+        return "auto"
+    raise ValueError(f"Invalid ocr mode {value!r}; use off, auto, or full")
 
 
 @dataclass
@@ -30,7 +45,9 @@ class PipelineConfig:
     do_table_structure: bool = True
     table_mode: str = "accurate"
     force_backend_text: bool = True
-    do_ocr: bool = False
+    ocr_mode: OcrMode = "off"
+    # Only OCR image regions larger than this fraction of the page (auto mode)
+    bitmap_area_threshold: float = 0.01
 
     @classmethod
     def from_env(cls) -> PipelineConfig:
@@ -40,6 +57,12 @@ class PipelineConfig:
                 return default
             return raw.strip().lower() in {"1", "true", "yes", "on"}
 
+        ocr_mode: OcrMode = "off"
+        if os.environ.get("DOCLING_OCR_MODE"):
+            ocr_mode = parse_ocr_mode(os.environ["DOCLING_OCR_MODE"])
+        elif _bool("DOCLING_DO_OCR", False):
+            ocr_mode = "auto"
+
         return cls(
             device=os.environ.get("DOCLING_DEVICE", "cuda"),
             layout_batch_size=int(os.environ.get("DOCLING_LAYOUT_BATCH_SIZE", "64")),
@@ -48,7 +71,10 @@ class PipelineConfig:
             do_table_structure=_bool("DOCLING_DO_TABLE_STRUCTURE", True),
             table_mode=os.environ.get("DOCLING_TABLE_MODE", "accurate"),
             force_backend_text=_bool("DOCLING_FORCE_BACKEND_TEXT", True),
-            do_ocr=_bool("DOCLING_DO_OCR", False),
+            ocr_mode=ocr_mode,
+            bitmap_area_threshold=float(
+                os.environ.get("DOCLING_BITMAP_AREA_THRESHOLD", "0.01")
+            ),
         )
 
 
@@ -61,6 +87,7 @@ class ConvertResult:
     pages_per_second: float | None
     warnings: list[str] = field(default_factory=list)
     doc_dict: dict[str, Any] | None = None
+    ocr_mode: OcrMode = "off"
 
 
 class ConversionError(Exception):
@@ -93,21 +120,27 @@ def build_converter(config: PipelineConfig) -> DocumentConverter:
         else TableFormerMode.ACCURATE
     )
 
+    do_ocr = config.ocr_mode != "off"
+    force_backend_text = config.force_backend_text if config.ocr_mode == "off" else False
+
     pipeline_options = ThreadedPdfPipelineOptions(
         accelerator_options=AcceleratorOptions(device=_map_device(config.device)),
         ocr_batch_size=config.ocr_batch_size,
         layout_batch_size=config.layout_batch_size,
         table_batch_size=config.table_batch_size,
-        do_ocr=config.do_ocr,
+        do_ocr=do_ocr,
         do_table_structure=config.do_table_structure,
-        force_backend_text=config.force_backend_text,
+        force_backend_text=force_backend_text,
     )
     pipeline_options.table_structure_options.mode = table_enum
 
-    if config.do_ocr:
-        pipeline_options.ocr_options = RapidOcrOptions(backend="torch")
-        # OCR reads page images; native text-only mode is not used.
-        pipeline_options.force_backend_text = False
+    if do_ocr:
+        ocr_options = RapidOcrOptions(
+            backend="torch",
+            force_full_page_ocr=(config.ocr_mode == "full"),
+            bitmap_area_threshold=config.bitmap_area_threshold,
+        )
+        pipeline_options.ocr_options = ocr_options
 
     return DocumentConverter(
         format_options={

@@ -56,20 +56,6 @@ curl http://localhost:8001/ready
 
 First startup downloads models (~GB). Default pipeline is OCR-off (~6–10 s). OCR-on loads on the first `ocr=true` request.
 
-### Confirm you are on **this** service
-
-`/docs` should list only **3** application endpoints. If you see many other routes (e.g. `/v1/chunk`, `/documents`, jobs), another app is on that port (often **docling-serve**), not `service.app:app`.
-
-```bash
-curl -s http://localhost:8001/ | jq .
-# Expect: "service": "docling_marker_project", "endpoints.convert": "POST /v1/convert"
-
-curl -s http://localhost:8001/openapi.json | jq '.info.title, (.paths | keys)'
-# Expect title "Docling PDF Service" and paths: "/", "/health", "/ready", "/v1/convert"
-```
-
-In Swagger (`/docs`), the page title must be **Docling PDF Service**. **POST /v1/convert** is under the **conversion** tag. The long **Schemas** section at the bottom is JSON models, not extra APIs.
-
 ## API for the next stage
 
 ### Endpoints
@@ -90,7 +76,30 @@ In Swagger (`/docs`), the page title must be **Docling PDF Service**. **POST /v1
 | Param | Default | Description |
 |-------|---------|-------------|
 | `format` | `text` | `json` recommended for code — see below |
-| `ocr` | `false` | `true` for scanned/image PDFs; `false` for text-selectable PDFs |
+| `ocr` | `off` | `off` \| `auto` \| `full` — see [OCR modes](#ocr-modes) |
+
+### OCR modes
+
+| `ocr` | When to use | Carrier name in **image** on page 1? |
+|-------|-------------|--------------------------------------|
+| `off` | PDF has selectable text everywhere | No — ignored |
+| `auto` | Mixed PDF: text + logos/images | Sometimes — OCR runs only on image regions ≥1% of page |
+| `full` | Scanned PDF, or image headers must be read | Yes — re-OCRs entire page (slower; replaces embedded text) |
+
+**Why `ocr=false` and `ocr=true` looked the same:** with the old flag, `true` only ran OCR on large image blocks (default 5% of page). A small carrier logo was skipped, so output matched `off`.
+
+For **Dental/1.pdf**-style image carrier names, try:
+
+```bash
+curl -s -X POST "http://localhost:8001/v1/convert?format=json&ocr=auto" \
+  -F "file=@test_fixtures/Dental/1.pdf" | jq -r '.text' | head -20
+
+# If still missing, use full-page OCR:
+curl -s -X POST "http://localhost:8001/v1/convert?format=json&ocr=full" \
+  -F "file=@test_fixtures/Dental/1.pdf" | jq -r '.text' | head -20
+```
+
+Check the response header `X-Docling-OCR-Mode` matches what you requested (`off`, `auto`, or `full`).
 
 **Response (`format=json`)** — use this in automated pipelines:
 
@@ -103,7 +112,7 @@ In Swagger (`/docs`), the page title must be **Docling PDF Service**. **POST /v1
     "convert_seconds": 3.35,
     "pages_per_second": 2.39,
     "warnings": [],
-    "ocr": false,
+    "ocr_mode": "off",
     "source_filename": "plan.pdf"
   }
 }
@@ -111,7 +120,7 @@ In Swagger (`/docs`), the page title must be **Docling PDF Service**. **POST /v1
 
 Pass **`text`** to your LLM or extractor. Ignore structured insurance fields until stage 2.
 
-**Response (`format=text`)** — body is the string only (`text/plain`). Optional headers: `X-Docling-Status`, `X-Docling-Pages`, `X-Docling-Seconds`, `X-Docling-OCR`.
+**Response (`format=text`)** — body is the string only (`text/plain`). Optional headers: `X-Docling-Status`, `X-Docling-Pages`, `X-Docling-Seconds`, `X-Docling-OCR-Mode`.
 
 **Errors**
 
@@ -128,7 +137,8 @@ import requests
 
 DOCLING_URL = "http://gpu-host:8001"
 
-def pdf_to_text(pdf_path: str, *, ocr: bool = False) -> str:
+def pdf_to_text(pdf_path: str, *, ocr: str = "off") -> str:
+    """ocr: off | auto | full"""
     with open(pdf_path, "rb") as f:
         r = requests.post(
             f"{DOCLING_URL}/v1/convert",
@@ -141,7 +151,7 @@ def pdf_to_text(pdf_path: str, *, ocr: bool = False) -> str:
 
 
 def process_plan(pdf_path: str, plan_type: str) -> dict:
-    document_text = pdf_to_text(pdf_path, ocr=False)
+    document_text = pdf_to_text(pdf_path, ocr="auto")  # or "full" if logos are images
     # Stage 2: your LLM / API — schema from test_fixtures/{Health,Dental,Vision}/*.json
     return your_extractor(document_text, plan_type=plan_type)
 ```
@@ -160,7 +170,7 @@ curl -s -X POST "http://localhost:8001/v1/convert?format=json&ocr=false" \
 ```
 1. GET /ready  → 200
 2. For each PDF:
-     POST /v1/convert?format=json&ocr=false  →  text
+     POST /v1/convert?format=json&ocr=off|auto|full  →  text
      your stage-2 service(text, schema)       →  JSON
 ```
 

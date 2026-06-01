@@ -383,7 +383,7 @@ def run_benchmark(args: argparse.Namespace) -> int:
         total_pages=total_pages,
         overall_pages_per_second=overall_pps,
         config={
-            "do_ocr": False,
+            "ocr_mode": "off",
             "assumption": "text-selectable PDFs",
             "layout_batch_size": args.layout_batch_size,
             "ocr_batch_size": args.ocr_batch_size,
