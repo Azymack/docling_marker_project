@@ -217,7 +217,64 @@ curl http://127.0.0.1:8001/
 
 - First start can take **several minutes** (model download/load). `TimeoutStartSec=600` in the unit file allows for that.
 - Keep **one process per GPU** (`--workers 1`). The app serializes conversions with a lock.
-- After `git pull`, run `sudo systemctl restart docling-pdf`.
+- After `git pull`: `pip install -r requirements.txt` then `sudo systemctl restart docling-pdf`.
+
+### After `git pull` — still old version or Internal Server Error?
+
+**1. Confirm which code is running**
+
+```bash
+curl -s http://127.0.0.1:8001/ | jq .
+```
+
+New code must show:
+
+- `"build": "2026-05-28-ocr-modes-v2"`
+- `"ocr_modes": ["off", "auto", "full"]`
+
+If `build` is missing or `/docs` still shows `ocr` as **boolean**, the old process or wrong directory is still serving.
+
+**2. Restart correctly**
+
+```bash
+cd ~/docling_marker_project
+git pull
+source venv/bin/activate
+pip install -r requirements.txt
+
+sudo systemctl daemon-reload
+sudo systemctl stop docling-pdf
+sleep 2
+sudo ss -tlnp | grep 8001          # should show nothing
+sudo systemctl start docling-pdf
+journalctl -u docling-pdf -n 50 --no-pager
+```
+
+**3. Read the real error** (Swagger only says “Internal Server Error”)
+
+```bash
+journalctl -u docling-pdf -f
+```
+
+Then click **Send** in `/docs` again and read the traceback.
+
+**4. Common causes**
+
+| Symptom | Cause |
+|---------|--------|
+| Old `/docs` (ocr true/false only) | Wrong port, old process, or browser cache — hard-refresh `/docs` |
+| `NameError: ocr_mode` | Broken/partial `app.py` — pull latest and restart |
+| Import / RapidOCR errors on `ocr=auto` | Run `pip install -r requirements.txt` in **venv** |
+| `WorkingDirectory` wrong in systemd | Unit file points at another clone — check `systemctl cat docling-pdf` |
+
+**5. Manual run** (bypass systemd to test new code)
+
+```bash
+cd ~/docling_marker_project && source venv/bin/activate
+python -m uvicorn service.app:app --host 127.0.0.1 --port 8002
+curl -s http://127.0.0.1:8002/ | jq .build
+```
+
 - Open the port in your firewall only if other machines must call the API (e.g. `ufw allow 8001/tcp`).
 
 **Optional: reverse proxy** — put nginx in front for TLS and auth; proxy `POST /v1/convert` to `http://127.0.0.1:8001`.

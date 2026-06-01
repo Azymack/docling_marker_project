@@ -16,8 +16,10 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated
 
-from fastapi import FastAPI, File, HTTPException, Query, UploadFile
-from fastapi.responses import PlainTextResponse
+import traceback
+
+from fastapi import FastAPI, File, HTTPException, Query, Request, UploadFile
+from fastapi.responses import JSONResponse, PlainTextResponse
 from pydantic import BaseModel, Field
 
 from docling.document_converter import DocumentConverter
@@ -35,6 +37,8 @@ from docling_pipeline import (
 from service.settings import ServiceSettings
 
 _log = logging.getLogger(__name__)
+# Bump when deploying; shown on GET / for version checks
+SERVICE_BUILD = "2026-05-28-ocr-modes-v2"
 _settings = ServiceSettings()
 _base_config = PipelineConfig.from_env()
 
@@ -134,7 +138,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Docling PDF Service",
     description="Convert insurance PDFs to plain text (markdown) for downstream processing.",
-    version="1.1.0",
+    version="1.2.0",
     lifespan=lifespan,
     openapi_tags=[
         {"name": "conversion", "description": "PDF upload → text (use in your pipeline)"},
@@ -148,8 +152,10 @@ def root() -> dict:
     """Identify this service and list endpoints (useful if /docs shows unexpected routes)."""
     return {
         "service": "docling_marker_project",
+        "build": SERVICE_BUILD,
         "title": app.title,
         "version": app.version,
+        "ocr_modes": ["off", "auto", "full"],
         "docs": "/docs",
         "endpoints": {
             "convert": "POST /v1/convert",
@@ -157,6 +163,17 @@ def root() -> dict:
             "health": "GET /health",
         },
     }
+
+
+@app.exception_handler(Exception)
+async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+    if isinstance(exc, HTTPException):
+        return JSONResponse(status_code=exc.status_code, content={"detail": exc.detail})
+    _log.error("Unhandled %s: %s\n%s", type(exc).__name__, exc, traceback.format_exc())
+    return JSONResponse(
+        status_code=500,
+        content={"detail": str(exc), "type": type(exc).__name__},
+    )
 
 
 @app.get("/health", tags=["health"])
@@ -170,6 +187,7 @@ def ready() -> dict:
         raise HTTPException(status_code=503, detail="Pipeline not ready")
     return {
         "status": "ready",
+        "build": SERVICE_BUILD,
         "loaded_pipelines": list(_converters.keys()),
         "pipeline_init_seconds": _converter_init_seconds,
         "default_config": {
@@ -202,9 +220,11 @@ def ready() -> dict:
 async def convert(
     file: Annotated[UploadFile, File(description="PDF file to convert")],
     ocr: Annotated[
-        bool,
-        Query(description="Enable OCR for scanned/image PDFs (slower)"),
-    ] = False,
+        str,
+        Query(
+            description="OCR: off | auto | full (aliases: false→off, true→auto)",
+        ),
+    ] = "off",
     format: Annotated[
         ResponseFormat,
         Query(description="`text`: raw string body; `json`: text + metadata"),
@@ -243,7 +263,12 @@ async def convert(
             tmp_path = Path(tmp.name)
 
         try:
-            result = _convert_locked(tmp_path, do_ocr=ocr)
+            ocr_mode = parse_ocr_mode(ocr)
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+        try:
+            result = _convert_locked(tmp_path, ocr_mode=ocr_mode)
         except ConversionError as exc:
             raise HTTPException(
                 status_code=422,
