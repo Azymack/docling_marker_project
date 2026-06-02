@@ -1,0 +1,218 @@
+## BlueChoice HMO Silver 6900 Ded Summary of Benefits
+
+Non-Integrated Deductible
+
+| Services                                                                                                                                                                                                                                           | In-Network You Pay 1                                                                                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Visit www.carefirst.com/doctor to locate providers and facilities                                                                                                                                                                                  | Visit www.carefirst.com/doctor to locate providers and facilities                                                                                                                                 |
+| 24-HOUR NURSE ADVICE LINE                                                                                                                                                                                                                          | 24-HOUR NURSE ADVICE LINE                                                                                                                                                                         |
+| Free advice from a registered nurse. Visit www.carefirst.com/needcare to learn more about your options for care.                                                                                                                                   | When your doctor is not available, call 800-535-9700 to speak with a registered nurse about your health questions and treatment options                                                           |
+| WELLBEING PROGRAM& BLUE REWARDS                                                                                                                                                                                                                    | WELLBEING PROGRAM& BLUE REWARDS                                                                                                                                                                   |
+| Visit www.carefirst.com/wellbeing for more information.                                                                                                                                                                                            | You have access to a comprehensive wellbeing program as part of your medical plan. You also have Blue Rewards, an incentive program where you can get rewarded for completing certain activities. |
+| ANNUAL MEDICAL DEDUCTIBLE (Benefit Period) 2                                                                                                                                                                                                       | ANNUAL MEDICAL DEDUCTIBLE (Benefit Period) 2                                                                                                                                                      |
+| Individual/Family                                                                                                                                                                                                                                  | $6,900 Individual/$13,800 Family (separate)                                                                                                                                                       |
+| ANNUAL OUT-OF-POCKET MAXIMUM (Benefit Period) 3,4                                                                                                                                                                                                  | ANNUAL OUT-OF-POCKET MAXIMUM (Benefit Period) 3,4                                                                                                                                                 |
+| Individual/Family                                                                                                                                                                                                                                  | $9,900 Individual/$19,800 Family (separate)                                                                                                                                                       |
+| PREVENTIVE SERVICES                                                                                                                                                                                                                                | PREVENTIVE SERVICES                                                                                                                                                                               |
+| Well-Child Care (including exams & immunizations)                                                                                                                                                                                                  | No charge*                                                                                                                                                                                        |
+| Adult Physical Examination (including routine GYN visit)                                                                                                                                                                                           | No charge*                                                                                                                                                                                        |
+| Breast Cancer Screening                                                                                                                                                                                                                            | No charge*                                                                                                                                                                                        |
+| Pap Test                                                                                                                                                                                                                                           | No charge*                                                                                                                                                                                        |
+| Prostate Cancer Screening                                                                                                                                                                                                                          | No charge*                                                                                                                                                                                        |
+| Colorectal Cancer Screening                                                                                                                                                                                                                        | No charge*                                                                                                                                                                                        |
+| PCP AND SPECIALIST SERVICES                                                                                                                                                                                                                        | PCP AND SPECIALIST SERVICES                                                                                                                                                                       |
+| FACILITY CHARGE 5 - In addition to the physician copays/coinsurances listed below, if a service is rendered on a hospital campus, ADD facility charge if applicable (also applies to Artificial Insemination and In Vitro Fertilization on page 2) | Deductible, then $50 per visit                                                                                                                                                                    |
+| Office Visits for Illness - PCP 5,6                                                                                                                                                                                                                | Virtual Connect Plus through selected providers, including CloseKnit 7 - No charge* (www.carefirst.com/virtualconnect) All other providers - No charge*                                           |
+| Office Visits for Illness - Specialist 5,6                                                                                                                                                                                                         | $60 per visit                                                                                                                                                                                     |
+| Allergy Testing 5                                                                                                                                                                                                                                  | $60 per visit                                                                                                                                                                                     |
+| Allergy Shots 5                                                                                                                                                                                                                                    | $60 per visit                                                                                                                                                                                     |
+| Physical, Speech, and Occupational Therapy 5 (limited to 30 visits/illness or injury/benefit period)                                                                                                                                               | $60 per visit                                                                                                                                                                                     |
+| Chiropractic 5 (limited to 20 visits/benefit period)                                                                                                                                                                                               | $60 per visit                                                                                                                                                                                     |
+| Acupuncture 5                                                                                                                                                                                                                                      | $60 per visit                                                                                                                                                                                     |
+
+SUM7419 ■ MD ■ 2026 ACA Complaint
+
+[ 1 ]
+
+## BlueChoice HMO Silver 6900 Ded Summary of Benefits
+
+| Services                                                                                     | In-Network You Pay 1                                                                         |
+|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| IMMEDIATE AND EMERGENCY SERVICES                                                             | IMMEDIATE AND EMERGENCY SERVICES                                                             |
+| Convenience Care (retail health clinics such as CVS MinuteClinic)                            | No charge*                                                                                   |
+| Urgent Care Center (such as Patient First or ExpressCare)                                    | $50 per visit                                                                                |
+| Hospital Emergency Room Services                                                             | Hospital Emergency Room Services                                                             |
+| ■ Facility                                                                                   | Deductible, then $500 per visit (waived if admitted)                                         |
+| ■ Physician                                                                                  | Deductible, then $60 per visit                                                               |
+| Ambulance (if medically necessary)                                                           | Deductible, then $60 per service                                                             |
+| DIAGNOSTIC SERVICES Labs 8                                                                   | DIAGNOSTIC SERVICES Labs 8                                                                   |
+| ■ LabCorp                                                                                    | $25 per visit                                                                                |
+| ■ Hospital                                                                                   | Deductible, then $100 per visit                                                              |
+| X-ray 8                                                                                      | X-ray 8                                                                                      |
+| ■ Non-Hospital/Freestanding Facility                                                         | $50 per visit                                                                                |
+| ■ Hospital                                                                                   | Deductible, then $200 per visit                                                              |
+| Imaging 8                                                                                    | Imaging 8                                                                                    |
+| ■ Non-Hospital/Freestanding Facility                                                         | $250 per visit                                                                               |
+| ■ Hospital                                                                                   | Deductible, then $500 per visit                                                              |
+| SURGERY AND HOSPITALIZATION - (Members are responsible for both physician and facility fees) | SURGERY AND HOSPITALIZATION - (Members are responsible for both physician and facility fees) |
+| Outpatient Surgery (Non-Hospital)                                                            | Outpatient Surgery (Non-Hospital)                                                            |
+| ■ Facility                                                                                   | $300 per visit                                                                               |
+| ■ Physician                                                                                  | $60 per visit                                                                                |
+| Outpatient Surgery (Hospital)                                                                | Outpatient Surgery (Hospital)                                                                |
+| ■ Facility                                                                                   | Deductible, then $400 per visit                                                              |
+| ■ Physician                                                                                  | Deductible, then $60 per visit                                                               |
+| Inpatient Surgery and Hospital Services                                                      | Inpatient Surgery and Hospital Services                                                      |
+| ■ Facility                                                                                   | Deductible, then $500 per admission                                                          |
+| ■ Physician                                                                                  | Deductible, then $60 per visit                                                               |
+| HOSPITAL ALTERNATIVES                                                                        | HOSPITAL ALTERNATIVES                                                                        |
+| HomeHealth Care                                                                              | No charge*                                                                                   |
+| Hospice Inpatient (Inpatient - limited to 60 days per hospice eligibility period)            | No charge*                                                                                   |
+| Hospice Outpatient (Outpatient - limited to 180 days hospice eligibility period)             | No charge*                                                                                   |
+| Skilled Nursing Facility (limited to 100 days/benefit period)                                | Deductible, then $500 per admission                                                          |
+
+SUM7419 ■ MD ■ 2026 ACA Complaint
+
+[ 2 ]
+
+## BlueChoice HMO Silver 6900 Ded Summary of Benefits
+
+| Services                                                                                                  | In-Network You Pay 1                                                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MATERNITY                                                                                                 |                                                                                                                                                                |
+| Preventive Prenatal and Postnatal Office Visits                                                           | No charge*                                                                                                                                                     |
+| Delivery and Facility Services                                                                            | Deductible, then $500 per admission                                                                                                                            |
+| Artificial and Intrauterine Insemination 5,9                                                              | No charge* after deductible                                                                                                                                    |
+| In Vitro Fertilization Procedures 5,9                                                                     | Not covered                                                                                                                                                    |
+| MENTAL HEALTH AND SUBSTANCE USE DISORDER - (Members are responsible for both physician and facility fees) | MENTAL HEALTH AND SUBSTANCE USE DISORDER - (Members are responsible for both physician and facility fees)                                                      |
+| Office Visit                                                                                              | Virtual Connect Plus through selected providers, including CloseKnit 7 - No charge* (www.carefirst.com/virtualconnect) All other providers - No charge*        |
+| Outpatient Services                                                                                       |                                                                                                                                                                |
+| ■ Facility                                                                                                | $50 per visit                                                                                                                                                  |
+| ■ Physician                                                                                               | $50 per visit                                                                                                                                                  |
+| Inpatient Services                                                                                        |                                                                                                                                                                |
+| ■ Facility                                                                                                | Deductible, then $500 per admission                                                                                                                            |
+| ■ Physician                                                                                               | Deductible, then $50 per visit                                                                                                                                 |
+| MEDICAL DEVICES AND SUPPLIES                                                                              |                                                                                                                                                                |
+| Durable Medical Equipment                                                                                 | Deductible, then 25% of Allowed Benefit                                                                                                                        |
+| Hearing Aids for Adults                                                                                   | Deductible, then 25% of Allowed Benefit                                                                                                                        |
+| PRESCRIPTION DRUGS                                                                                        |                                                                                                                                                                |
+| Formulary List                                                                                            | Visit www.carefirst.com/acarx to locate Formulary List                                                                                                         |
+| Annual Prescription Drug Deductible                                                                       | $450 per person (waived for generic drugs; preferred and non-preferred brand insulin)                                                                          |
+| Preventive Drugs                                                                                          | No charge*                                                                                                                                                     |
+| Diabetic Supplies                                                                                         | No charge*                                                                                                                                                     |
+| Oral Chemo Drugs                                                                                          | No charge*                                                                                                                                                     |
+| Opioid Reversal Agents                                                                                    | No charge*                                                                                                                                                     |
+| Generic Drugs                                                                                             | 30-day supply: $15 90-day supply: $30 (maintenance drugs only)                                                                                                 |
+| Preferred Brand Drugs 10 (Preferred Insulin $0)                                                           | 30-day supply: Deductible, then $50 90-day supply: Deductible, then $100 (maintenance drugs only)                                                              |
+| Non-preferred Brand Drugs 11 (Non-preferred Insulin capped at $30 for 30 days/$60 for 90 days)            | 30-day supply: Deductible, then $75 90-day supply: Deductible, then $150 (maintenance drugs only)                                                              |
+| Preferred Specialty Drugs (must be filled through Exclusive Specialty Pharmacy Network)                   | 30-day supply: Deductible, then 50% coinsurance up to $100 maximum 90-day supply: Deductible, then 50% coinsurance up to $200 maximum (maintenance drugs only) |
+| Non-Preferred Specialty Drugs (must be filled through Exclusive Specialty Pharmacy Network)               | 30-day supply: Deductible, then 50% coinsurance up to $150 maximum 90-day supply: Deductible, then 50% coinsurance up to $300 maximum (maintenance drugs only) |
+
+SUM7419 ■ MD ■ 2026 ACA Complaint
+
+[ 3 ]
+
+## BlueChoice HMO Silver 6900 Ded Summary of Benefits
+
+| Services                                                                                                                              | In-Network You Pay 1                                                                      | In-Network You Pay 1                                                                      |
+|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| PEDIATRIC VISION - (Through the end of the calendar year in which the dependent turns 19)                                             | PEDIATRIC VISION - (Through the end of the calendar year in which the dependent turns 19) | PEDIATRIC VISION - (Through the end of the calendar year in which the dependent turns 19) |
+| Routine Exam (limited to 1 visit/benefit period)                                                                                      | In-network-No charge*                                                                     | Out-of-network-Total charge minus $40 reimbursement                                       |
+| Frames and Contact Lenses - Pediatric Collection Only                                                                                 | In-network-No charge*                                                                     | Out-of-network-Reimbursements apply                                                       |
+| Spectacle Lenses                                                                                                                      | In-network-Reimbursements apply                                                           | Out-of-network-Reimbursements apply                                                       |
+| PEDIATRIC DENTAL - (Through the end of the calendar year in which the dependent turns 19)                                             | PEDIATRIC DENTAL - (Through the end of the calendar year in which the dependent turns 19) | PEDIATRIC DENTAL - (Through the end of the calendar year in which the dependent turns 19) |
+| Annual Dental Deductible                                                                                                              | In-network-$25                                                                            | Out-of-network-$50                                                                        |
+| Class I Preventative& Diagnostic Services - Exams, cleanings, fluoride treatments, sealants, bitewing x-rays 12 , full mouth x-ray 13 | In-network-No charge*                                                                     | Out-of-network- 20% of Allowed Benefit                                                    |
+| Class II Basic Services - Fillings (amalgam or composite), simple extractions, non-surgical periodontics                              | In-network-Deductible, then 20% of Allowed Benefit                                        | Out-of-network-Deductible, then 40% of Allowed Benefit                                    |
+| Class III Major Services - Surgical periodontics, endodontics, oral surgery                                                           | In-network-Deductible, then 20% of Allowed Benefit                                        | Out-of-network-Deductible, then 40% of Allowed Benefit                                    |
+| Class IV Major Services - Restorative Crowns, dentures, inlays and onlays                                                             | In-network-Deductible, then 50% of Allowed Benefit                                        | Out-of-network-Deductible, then 65% of Allowed Benefit                                    |
+| Class V Medically Necessary Orthodontic Services                                                                                      | In-network- 50% of Allowed Benefit                                                        | Out-of-network- 65% of Allowed Benefit                                                    |
+
+SUM7419 ■ MD ■ 2026 ACA Complaint
+
+[ 4 ]
+
+## BlueChoice HMO Silver 6900 Ded Summary of Benefits
+
+Note: Allowed Benefit is the fee that participating, in-network providers have agreed to accept for a particular covered service. The provider cannot charge the member more than this amount for any covered service. Example: Dr. Carson charges $100 to see a sick patient. To be part of CareFirst's network, he has agreed to accept $50 for the visit. The member will pay their copay/coinsurance and deductible (if applicable) and CareFirst will pay the remaining amount up to $50.
+
+This summary is for comparison purposes only and does not create rights not given through the benefit plan. Not all services and procedures are covered by your benefits contract. Some services may have limitations or exclusions. For more information about plan benefits, limitations, exclusions and conditions of coverage, or for a copy of the complete terms of coverage please contact your employer or CareFirst.
+
+*    No copayment or coinsurance.
+1. When multiple services are rendered on the same day by more than one provider, Member payments are required for each provider.
+2. For family coverage only: When one family member meets the individual deductible, they can start receiving benefits. Each family member cannot contribute more than the individual deductible amount. The family deductible must be met before the remaining family members can start receiving benefits.
+3. For family coverage only: When one family member meets the individual out-of-pocket maximum, their services will be covered at 100% up to the Allowed Benefit. Each family member cannot contribute more than the individual out-of-pocket maximum amount. The family out-of-pocket maximum must be met before the services for all remaining family members will be covered at 100% up to the Allowed Benefit. The out-of-pocket maximum includes deductibles, copays and coinsurance.
+4. All drug costs are subject to the in-network out-of-pocket maximum.
+5. If a service is rendered on a hospital campus you could receive two bills, one from the physician and one from the facility.
+6. 'Telemedicine services' refers to the use of interactive audio, including audio -only telephone conversation between a health care provider and the Member when required by law, video, or other electronic media used for the purpose of diagnosis, consultation, or treatment. Use of e-mail, online questionnaires or Fax is not considered a telemedicine service. Providers will use their professional judgment to determine if a telemedicine visit is appropriate or if an in-person visit is required.
+7. CloseKnit is a registered Trademark owned by, and is the trade name of, Atlas Health, LLC. Atlas Health, LLC d/b/a CloseKnit does not provide Blue Cross Blue Shield products or services and is providing in person and telehealth services to CareFirst members. Atlas Health, LLC is a corporate affiliate within the CareFirst, Inc. corporate umbrella of companies.
+8. Members accessing laboratory tests, x-rays, and specialty imaging services inside the CareFirst Service Area (Maryland, D.C., Northern Virginia) must use a designated Contracting Provider and/or Contracting Facility which may include a non-hospital/freestanding facility.
+9. Members who are unable to conceive have coverage for the evaluation of infertility services performed to confirm an infertility diagnosis, and some treatment options for infertility. Preauthorization required.
+10. If a Generic drug becomes available for a Preferred Brand drug, the Preferred Brand drug moves to the Non-preferred Brand drug tier.
+11. If a provider prescribes a Non-preferred Brand drug, and the Member selects the Non-preferred Brand drug when a Generic drug is available, the Member shall pay the applicable Copayment or Coinsurance as stated in the Schedule of Benefits plus the difference between the price of the Nonpreferred Brand drug and the Generic drug up to the cost of the drug. This amount will not contribute to the Out-of-Pocket Maximum.
+12. Class I Preventative &amp; Diagnostic Services - Exams, cleanings, fluoride treatments, sealants, bitewing x-rays are limited to 2 per year per provider per location.
+13. Class I Preventative &amp; Diagnostic Services - Full mouth x-ray is limited to 1 per every 3 years per provider per location.
+
+Reminder: To enroll in HMO, HMO Referral and Plus plans, members must live or work within the CareFirst service area of Maryland, Washington, D.C. or Northern Virginia.
+
+Note: Upon enrollment in CareFirst BlueChoice, you will need to select a Primary Care Provider (PCP). To select a PCP, go to www.carefirst.com/findadoc for the most current listing of PCPs from our online provider directory. You may also call the Member Services number on the back of your CareFirst ID card for assistance in selecting a PCP or obtaining a printed copy of the CareFirst BlueChoice provider directory.
+
+Not all services and procedures are covered by your benefits contract. This summary is for comparison purposes only and does not create rights not given through the benefit plan.
+
+<!-- image -->
+
+CareFirst BlueChoice, Inc. is an independent licensee of the Blue Cross and Blue Shield Association. BLUE CROSS®, BLUE SHIELD® and the Cross and Shield Symbols are registered service marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross and Blue Shield Plans.
+
+SUM7419 ■ MD ■ 2026 ACA Complaint
+
+[5]
+
+## Notice of Nondiscrimination and
+
+## Availability of Language Assistance Services
+
+## (UPDATED 4/15/2025)
+
+CareFirst BlueCross BlueShield, CareFirst BlueChoice, Inc., CareFirst Diversified Benefits and all of their corporate affiliates (CareFirst) comply with applicable federal civil rights laws and do not discriminate on the basis of race, color, national origin, age, disability or sex. CareFirst does not exclude people or treat them differently because of race, color, national origin, age, disability or sex .
+
+## CareFirst:
+
+- Provides free aid and services to people with disabilities to communicate effectively with us, such as:
+- o Qualified sign language interpreters
+- o Written information in other formats (large print, audio, accessible electronic formats, other formats)
+- Provides free language services to people whose primary language is not English, such as:
+- o Qualified interpreters
+- o Information written in other languages
+
+## If you need these services, please call 855-258-6518.
+
+If you believe CareFirst has failed to provide these services, or discriminated in another way, on the basis of race, color, national origin, age, disability or sex, you can file a grievance with our CareFirst Civil Rights Coordinator by mail, fax or email. If you need help filing a grievance, our CareFirst Civil Rights Coordinator is available to help you.
+
+To file a grievance regarding a violation of federal civil rights, please contact the Civil Rights Coordinator as indicated below. Please do not send payments, claims issues, or other documentation to this office.
+
+Civil Rights Coordinator, Corporate Office of Civil Rights.
+
+Mailing Address
+
+P.O. Box 14858 Lexington, KY 40512
+
+Email Address
+
+civilrightscoordinator@carefirst.com
+
+Telephone Number
+
+410-528-7820
+
+Fax Number
+
+410-505-2011
+
+You can also file a civil rights complaint with the U.S. Department of Health and Human Services, Office for Civil Rights electronically through the Office for Civil Rights Complaint portal, available at
+
+[https://ocrportal.hhs.gov/ocr/portal/lobby.jsf or by mail or phone at:](https://ocrportal.hhs.gov/ocr/portal/lobby.jsf)
+
+U.S. Department of Health and Human Services 200 Independence Avenue, SW Room 509F, HHH Building Washington, D.C. 20201 800-368-1019, 800-537-7697 (TDD)
+
+## [Complaint forms are available at http://www.hhs.gov/ocr/office/file/index.html .](http://www.hhs.gov/ocr/office/file/index.html)
+
+CareFirst BlueCross BlueShield is the shared business name of CareFirst of Maryland, Inc. and Group Hospitalization and Medical Services, Inc. CareFirst of Maryland, Inc., Group Hospitalization and Medical Services, Inc., CareFirst BlueChoice, Inc., The Dental Network and First Care, Inc. are independent licensees of the Blue Cross and Blue Shield Association. In the District of Columbia and Maryland, CareFirst MedPlus is the business name of First Care, Inc. In Virginia, CareFirst MedPlus is the business name of First Care, Inc. of Maryland (used in VA by: First Care, Inc.). The BLUE CROSS® and BLUE SHIELD® and the Cross and Shield Symbols are registered service marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross and Blue Shield Plans.
