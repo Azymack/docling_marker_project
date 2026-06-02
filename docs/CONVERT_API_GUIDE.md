@@ -61,6 +61,7 @@ Expect:
 |-----------|---------|--------|-------------|
 | `format` | `text` | `text`, `json` | Response shape (see below) |
 | `ocr` | `off` | `off`, `auto`, `full` | How text is extracted (see OCR modes) |
+| `include_page_furniture` | `true` | `true`, `false` | Include page headers/footers in returned text (recommended for required date/header fields) |
 
 **Aliases for `ocr`:** `false` → `off`, `true` → `auto`.
 
@@ -96,6 +97,7 @@ Expect:
     "pages_per_second": 2.39,
     "warnings": [],
     "ocr_mode": "off",
+    "include_page_furniture": true,
     "source_filename": "plan.pdf"
   }
 }
@@ -133,7 +135,7 @@ Useful headers:
 ### curl — JSON (typical for pipelines)
 
 ```bash
-curl -s -X POST "http://gpu-host:8001/v1/convert?format=json&ocr=off" \
+curl -s -X POST "http://gpu-host:8001/v1/convert?format=json&ocr=off&include_page_furniture=true" \
   -F "file=@/path/to/plan.pdf"
 ```
 

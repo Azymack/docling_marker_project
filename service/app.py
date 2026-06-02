@@ -61,6 +61,7 @@ class ConvertMetadata(BaseModel):
     pages_per_second: float | None = None
     warnings: list[str] = Field(default_factory=list)
     ocr_mode: str
+    include_page_furniture: bool = True
     source_filename: str | None = None
 
 
@@ -109,6 +110,49 @@ def _convert_locked(pdf_path: Path, *, ocr_mode: OcrMode) -> ConvertResult:
         result = convert_pdf(converter, pdf_path)
         result.ocr_mode = ocr_mode
         return result
+
+
+def _extract_page_furniture_lines(doc_dict: dict | None) -> list[str]:
+    """Collect page header/footer text from Docling JSON export."""
+    if not isinstance(doc_dict, dict):
+        return []
+    texts = doc_dict.get("texts", [])
+    if not isinstance(texts, list):
+        return []
+
+    lines: list[str] = []
+    seen: set[str] = set()
+    for item in texts:
+        if not isinstance(item, dict):
+            continue
+        if item.get("content_layer") != "furniture":
+            continue
+        if item.get("label") not in {"page_header", "page_footer"}:
+            continue
+
+        text = str(item.get("text", "")).strip()
+        if not text or text in seen:
+            continue
+        seen.add(text)
+        lines.append(text)
+
+    return lines
+
+
+def _merge_page_furniture(markdown: str, doc_dict: dict | None, include: bool) -> str:
+    """Prepend page furniture text so required header fields are preserved."""
+    if not include:
+        return markdown
+
+    furniture_lines = _extract_page_furniture_lines(doc_dict)
+    if not furniture_lines:
+        return markdown
+
+    furniture_block = "\n".join(furniture_lines).strip()
+    body = markdown.lstrip()
+    if not body:
+        return furniture_block
+    return f"{furniture_block}\n\n{body}"
 
 
 @asynccontextmanager
@@ -229,6 +273,15 @@ async def convert(
         ResponseFormat,
         Query(description="`text`: raw string body; `json`: text + metadata"),
     ] = ResponseFormat.text,
+    include_page_furniture: Annotated[
+        bool,
+        Query(
+            description=(
+                "Include page headers/footers (Docling 'furniture') in returned text. "
+                "Recommended: true for insurance docs with required date/header fields."
+            )
+        ),
+    ] = True,
 ):
     """
   Upload a PDF and receive extracted content as **inline text** (not a file download).
@@ -236,6 +289,7 @@ async def convert(
   - **ocr=off** (default): embedded PDF text only — misses text inside images.
   - **ocr=auto**: OCR on image regions (try for carrier logos in mixed PDFs).
   - **ocr=full**: full-page OCR — use for fully scanned PDFs; slower.
+  - **include_page_furniture=true** (default): include page header/footer lines in text output.
   - **format=text** (default): response body is the markdown string (`text/plain`).
   - **format=json**: `{"text": "...", "metadata": {...}}` for the next pipeline stage.
     """
@@ -275,6 +329,12 @@ async def convert(
                 detail={"message": str(exc), "status": exc.status, "pages": exc.pages},
             ) from exc
 
+        output_text = _merge_page_furniture(
+            result.markdown,
+            result.doc_dict,
+            include_page_furniture,
+        )
+
         meta = ConvertMetadata(
             status=result.status,
             pages=result.pages,
@@ -282,14 +342,15 @@ async def convert(
             pages_per_second=result.pages_per_second,
             warnings=result.warnings,
             ocr_mode=ocr_mode,
+            include_page_furniture=include_page_furniture,
             source_filename=file.filename,
         )
 
         if format == ResponseFormat.json:
-            return ConvertJsonResponse(text=result.markdown, metadata=meta)
+            return ConvertJsonResponse(text=output_text, metadata=meta)
 
         return PlainTextResponse(
-            content=result.markdown,
+            content=output_text,
             media_type="text/plain; charset=utf-8",
             headers=_response_headers(result, ocr_mode=ocr_mode),
         )
