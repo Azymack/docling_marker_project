@@ -1,0 +1,63 @@
+{
+  "fields_evaluated": 43,
+  "fields_skipped_empty": 8,
+  "fields_found": 40,
+  "fields_missing": 3,
+  "recall": 0.9302,
+  "hit_fields": [
+    "Carrier Name",
+    "Plan Name",
+    "In-Network Single Deductible",
+    "In-Network Family Deductible",
+    "Out-of-Network Single Deductible",
+    "Out-of-Network Family Deductible",
+    "In-Network Single OOP Max",
+    "In-Network Family OOP Max",
+    "Out-of-Network Single OOP Max",
+    "Out-of-Network Family OOP Max",
+    "In-Network Coinsurance",
+    "Out-of-Network Coinsurance",
+    "In-Network PCP Visit",
+    "Out-of-Network PCP Visit",
+    "In-Network Specialist Visit",
+    "Out-of-Network Specialist Visit",
+    "In-Network Urgent Care Visit",
+    "Out-of-Network Urgent Care Visit",
+    "In-Network ER Visit",
+    "Out-of-Network ER Visit",
+    "In-Network Preventive Visit",
+    "Out-of-Network Preventive Visit",
+    "In-Network Outpatient Surgery",
+    "Out-of-Network Outpatient Surgery",
+    "In-Network Inpatient Surgery",
+    "Out-of-Network Inpatient Surgery",
+    "In-Network Newborn Delivery",
+    "Out-of-Network Newborn Delivery",
+    "In-Network Major Diagnostics",
+    "Out-of-Network Major Diagnostics",
+    "In-Network Brand RX",
+    "Out-of-Network Brand RX",
+    "In-Network Tier 3 RX",
+    "Out-of-Network Tier 3 RX",
+    "In-Network Tier 4 RX",
+    "Out-of-Network Tier 4 RX",
+    "Plan Year",
+    "Network Type",
+    "Member Website",
+    "Customer Service Phone Number"
+  ],
+  "misses": [
+    {
+      "field": "In-Network Generic RX",
+      "expected": "Tier 1a: $3 / Tier 1b: $20"
+    },
+    {
+      "field": "Out-of-Network Generic RX",
+      "expected": "Tier 1a: $3 / Tier 1b: $20"
+    },
+    {
+      "field": "Network Name",
+      "expected": "EverydayHealth"
+    }
+  ]
+}

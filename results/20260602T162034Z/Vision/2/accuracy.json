@@ -1,0 +1,41 @@
+{
+  "fields_evaluated": 21,
+  "fields_skipped_empty": 3,
+  "fields_found": 18,
+  "fields_missing": 3,
+  "recall": 0.8571,
+  "hit_fields": [
+    "In-Network Eye Exam",
+    "Out-of-Network Eye Exam",
+    "In-Network Single Vision Lens",
+    "Out-of-Network Single Vision Lens",
+    "In-Network Lined Bi-Focal Lens",
+    "Out-of-Network Lined Bi-Focal Lens",
+    "In-Network Lined Tri-Focal Lens",
+    "Out-of-Network Lined Tri-Focal Lens",
+    "In-Network Lenticular Lens",
+    "Out-of-Network Lenticular Lens",
+    "In-Network Contact Lens Allowance",
+    "Out-of-Network Contact Lens Allowance",
+    "In-Network Frame Allowance",
+    "Out-of-Network Frame Allowance",
+    "Exam Frequency",
+    "Lens Frequency",
+    "Frame Frequency",
+    "Member Website"
+  ],
+  "misses": [
+    {
+      "field": "Carrier Name",
+      "expected": "VSP vision care"
+    },
+    {
+      "field": "Out of Network Explanation",
+      "expected": "Your plan provides the following out-of-network reimbursements"
+    },
+    {
+      "field": "Customer Service Phone Number",
+      "expected": "800.877.7195"
+    }
+  ]
+}
