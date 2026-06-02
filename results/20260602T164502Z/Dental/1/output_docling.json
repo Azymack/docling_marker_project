@@ -1,0 +1,5310 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "1",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 15937806061385022013,
+    "filename": "1.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/tables/2"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 27.119999999999997,
+            "t": 774.036,
+            "r": 170.68800000000002,
+            "b": 739.8,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "Regence Expressions Participating Dental Network",
+      "text": "Regence Expressions Participating Dental Network",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 27.119999999999997,
+            "t": 739.944,
+            "r": 213.35700000000008,
+            "b": 729.612,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Effective January 1, 2026 through December 31, 2026",
+      "text": "Effective January 1, 2026 through December 31, 2026"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 384.24,
+            "t": 740.1439942559999,
+            "r": 578.9998052399999,
+            "b": 714.504001656,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            145
+          ]
+        }
+      ],
+      "orig": "Regence BlueShield serves select counties in the state of Washington and is an Independent Licensee of the Blue Cross and Blue Shield Association",
+      "text": "Regence BlueShield serves select counties in the state of Washington and is an Independent Licensee of the Blue Cross and Blue Shield Association"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 30.72,
+            "t": 703.818,
+            "r": 564.9839999999999,
+            "b": 661.23,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            566
+          ]
+        }
+      ],
+      "orig": "This plan includes preventive and diagnostic, basic and restorative, and major services. After satisfaction of the deductible, this plan will provide payment for the services at the percentages listed below up to the calendar year maximum. Payment of benefits is based on a percentage of the Allowed Amount. In-Network providers have agreed to accept the Allowed Amounts as payment for services. Services of an Out-of-Network provider are based on a percentage of the Allowed Amount. The Member will be responsible for any additional charges over the Allowed Amount.",
+      "text": "This plan includes preventive and diagnostic, basic and restorative, and major services. After satisfaction of the deductible, this plan will provide payment for the services at the percentages listed below up to the calendar year maximum. Payment of benefits is based on a percentage of the Allowed Amount. In-Network providers have agreed to accept the Allowed Amounts as payment for services. Services of an Out-of-Network provider are based on a percentage of the Allowed Amount. The Member will be responsible for any additional charges over the Allowed Amount."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 30.72,
+            "t": 30.857999999999947,
+            "r": 175.36800000000002,
+            "b": 10.350000000000023,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Regence BlueShield, Small Group, 2949639 2026 Regence Expressions",
+      "text": "Regence BlueShield, Small Group, 2949639 2026 Regence Expressions"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 548.16,
+            "t": 32.298,
+            "r": 585.0959999999999,
+            "b": 11.789999999999964,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "11/17/2025 Page 1",
+      "text": "11/17/2025 Page 1"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 30.72,
+            "t": 716.6370000000001,
+            "r": 179.784,
+            "b": 706.35,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "Temporomandibular Joint (TMJ) Disorders",
+      "text": "Temporomandibular Joint (TMJ) Disorders",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 30.72,
+            "t": 698.0579999999999,
+            "r": 136.37699999999998,
+            "b": 687.87,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Temporomandibular Joint (TMJ)",
+      "text": "Temporomandibular Joint (TMJ)"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 30.72,
+            "t": 687.2579999999999,
+            "r": 62.25,
+            "b": 677.0699999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 467.76,
+            "t": 716.6370000000001,
+            "r": 516.9839999999999,
+            "b": 706.35,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            10,
+            22
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 416.4,
+            "t": 698.2979999999999,
+            "r": 568.1039999999999,
+            "b": 688.11,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            23,
+            68
+          ]
+        }
+      ],
+      "orig": "Disorders What You Pay Coverage is based on type of service provided",
+      "text": "Disorders What You Pay Coverage is based on type of service provided"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 401.52,
+            "t": 687.978,
+            "r": 583.092,
+            "b": 677.79,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "(See Preventive and Diagnostic, Basic and Restorative,",
+      "text": "(See Preventive and Diagnostic, Basic and Restorative,"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 448.32,
+            "t": 677.4179999999999,
+            "r": 536.217,
+            "b": 667.23,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "and Major Services above)",
+      "text": "and Major Services above)"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 30.72,
+            "t": 558.1379999999999,
+            "r": 586.5869999999994,
+            "b": 496.34999999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            917
+          ]
+        }
+      ],
+      "orig": "This benefit summary provides a brief description of Your plan benefits, limitations and / or exclusions under Your plan and is not a guarantee of payment.  Once enrolled, You can view Your benefits booklet online at regence.com. PLEASE REFER TO YOUR BENEFITS BOOKLET OR SUMMARY PLAN DESCRIPTION FOR A COMPLETE LIST OF BENEFITS, THE LIMITATIONS AND / OR EXCLUSIONS THAT APPLY, AND A DEFINITION OF MEDICAL NECESSITY .  Regence is providing this benefit summary for illustrative purposes only.  Regence makes no warranties or representations regarding compliance with applicable federal, state, or local laws, or the accuracy of the benefit summary.  This document is not the legally required Summary of Benefits and Coverage that an employer is required to provide to employees and Members under Federal law, and the group must provide a legally compliant Summary of Benefits and Coverage to its employees and Members.",
+      "text": "This benefit summary provides a brief description of Your plan benefits, limitations and / or exclusions under Your plan and is not a guarantee of payment.  Once enrolled, You can view Your benefits booklet online at regence.com. PLEASE REFER TO YOUR BENEFITS BOOKLET OR SUMMARY PLAN DESCRIPTION FOR A COMPLETE LIST OF BENEFITS, THE LIMITATIONS AND / OR EXCLUSIONS THAT APPLY, AND A DEFINITION OF MEDICAL NECESSITY .  Regence is providing this benefit summary for illustrative purposes only.  Regence makes no warranties or representations regarding compliance with applicable federal, state, or local laws, or the accuracy of the benefit summary.  This document is not the legally required Summary of Benefits and Coverage that an employer is required to provide to employees and Members under Federal law, and the group must provide a legally compliant Summary of Benefits and Coverage to its employees and Members."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 96.72,
+            "t": 488.298,
+            "r": 518.9999999999991,
+            "b": 478.10999999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "Customer Service:  1-888-367-2112 - TTY:  711  |  1111 Lake Washington Blvd N., Suite 900, Renton, WA 98056  |  regence.com",
+      "text": "Customer Service:  1-888-367-2112 - TTY:  711  |  1111 Lake Washington Blvd N., Suite 900, Renton, WA 98056  |  regence.com"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 175.44,
+            "t": 698.0579999999999,
+            "r": 257.817,
+            "b": 687.87,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "$1,000 per calendar year",
+      "text": "$1,000 per calendar year"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 30.72,
+            "t": 37.337999999999965,
+            "r": 175.36800000000002,
+            "b": 16.83000000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Regence BlueShield, Small Group, 2949639 2026 Regence Expressions",
+      "text": "Regence BlueShield, Small Group, 2949639 2026 Regence Expressions"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 548.16,
+            "t": 39.49800000000005,
+            "r": 585.0959999999999,
+            "b": 18.99000000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "11/17/2025 Page 2",
+      "text": "11/17/2025 Page 2"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 189.14,
+            "t": 752.66256,
+            "r": 422.94319999999993,
+            "b": 738.2937706077348,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "NONDISCRIMINATION NOTICE",
+      "text": "NONDISCRIMINATION NOTICE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 717.456,
+            "r": 557.6200000000002,
+            "b": 665.2928618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            375
+          ]
+        }
+      ],
+      "orig": "Regence complies with applicable Federal and Washington state civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, sex, sexual orientation or gender identity. Regence does not exclude people or treat them less favorably because of race, color, national origin, age, disability, sex, sexual orientation or gender identity.",
+      "text": "Regence complies with applicable Federal and Washington state civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, sex, sexual orientation or gender identity. Regence does not exclude people or treat them less favorably because of race, color, national origin, age, disability, sex, sexual orientation or gender identity."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 648.436,
+            "r": 111.356,
+            "b": 637.6728618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Regence:",
+      "text": "Regence:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 634.636,
+            "r": 510.0840000000004,
+            "b": 610.0728618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            152
+          ]
+        }
+      ],
+      "orig": "Provides people with disabilities reasonable modifications and free appropriate auxiliary aids and services to communicate effectively with us, such as:",
+      "text": "Provides people with disabilities reasonable modifications and free appropriate auxiliary aids and services to communicate effectively with us, such as:"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 606.196,
+            "r": 264.836,
+            "b": 595.4328618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "· Qualified sign language interpreters",
+      "text": "Qualified sign language interpreters",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 591.136,
+            "r": 554.0520000000006,
+            "b": 566.5728618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "· Written information in other formats (large print, audio, accessible electronic formats, other formats).",
+      "text": "Written information in other formats (large print, audio, accessible electronic formats, other formats).",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 549.256,
+            "r": 541.3200000000004,
+            "b": 524.6928618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            110
+          ]
+        }
+      ],
+      "orig": "Provides free language assistance services to people whose primary language is not English, which may include:",
+      "text": "Provides free language assistance services to people whose primary language is not English, which may include:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 520.816,
+            "r": 186.776,
+            "b": 510.0528618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "· Qualified interpreters",
+      "text": "Qualified interpreters",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 505.69599999999997,
+            "r": 279.476,
+            "b": 494.932861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "· Information written in other languages.",
+      "text": "Information written in other languages.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 477.616,
+            "r": 284.9360000000001,
+            "b": 425.45286187845306,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            149
+          ]
+        }
+      ],
+      "orig": "If you need reasonable modifications, appropriate auxiliary aids and services, or language assistance services, contact the Civil Rights Coordinator.",
+      "text": "If you need reasonable modifications, appropriate auxiliary aids and services, or language assistance services, contact the Civil Rights Coordinator."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 408.616,
+            "r": 292.71600000000024,
+            "b": 287.432861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            383
+          ]
+        }
+      ],
+      "orig": "If you believe that Regence has failed to provide these services or discriminated in another way on the basis of race, color, national origin, age, disability, sex, sexual orientation or gender identity, you can file a grievance. You can file a grievance in person or by mail, fax, or email. If you need help filing a grievance, the Civil Rights Coordinator is available to help you.",
+      "text": "If you believe that Regence has failed to provide these services or discriminated in another way on the basis of race, color, national origin, age, disability, sex, sexual orientation or gender identity, you can file a grievance. You can file a grievance in person or by mail, fax, or email. If you need help filing a grievance, the Civil Rights Coordinator is available to help you."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 270.596,
+            "r": 164.816,
+            "b": 259.83286187845306,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Customer Service",
+      "text": "Customer Service",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 256.79600000000005,
+            "r": 188.816,
+            "b": 232.23286187845304,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Civil Rights Coordinator PO Box 1106",
+      "text": "Civil Rights Coordinator PO Box 1106"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 229.19600000000003,
+            "r": 253.496,
+            "b": 204.632861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "Lewiston, ID 83501-1106 Phone: 1-888-344-6347, (TTY: 711)",
+      "text": "Lewiston, ID 83501-1106 Phone: 1-888-344-6347, (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 201.65599999999995,
+            "r": 174.836,
+            "b": 190.892861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Fax: 1-888-309-8784",
+      "text": "Fax: 1-888-309-8784"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 187.856,
+            "r": 197.63600000000002,
+            "b": 177.09286187845305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Email: CS@regence.com",
+      "text": "Email: CS@regence.com"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 160.25599999999997,
+            "r": 220.19600000000003,
+            "b": 149.49286187845303,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Medicare Customer Service",
+      "text": "Medicare Customer Service",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 146.45600000000002,
+            "r": 250.19600000000003,
+            "b": 135.69286187845307,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Phone: 1-800-541-8981 (TTY: 711)",
+      "text": "Phone: 1-800-541-8981 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 132.65599999999995,
+            "r": 272.396,
+            "b": 121.892861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Email: medicareappeals@regence.com",
+      "text": "Email: medicareappeals@regence.com"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 105.03600000000006,
+            "r": 192.116,
+            "b": 94.272861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "VSP Customer Service",
+      "text": "VSP Customer Service",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 91.23599999999999,
+            "r": 189.476,
+            "b": 80.47286187845305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Phone: 1-844-299-3041",
+      "text": "Phone: 1-844-299-3041"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.4,
+            "t": 77.43600000000004,
+            "r": 177.476,
+            "b": 66.67286187845309,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "TTY: 1-800-428-4833",
+      "text": "TTY: 1-800-428-4833"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 306.14,
+            "t": 477.616,
+            "r": 569.004,
+            "b": 397.85286187845304,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            276
+          ]
+        }
+      ],
+      "orig": "You can also file a civil rights complaint with the U.S. Department of Health and Human Services, Office for Civil Rights, electronically through the Office for Civil Rights Complaint Portal, available at https://ocrportal.hhs.gov/ocr/portal/lobby.jsf, or by mail or phone at:",
+      "text": "You can also file a civil rights complaint with the U.S. Department of Health and Human Services, Office for Civil Rights, electronically through the Office for Civil Rights Complaint Portal, available at https://ocrportal.hhs.gov/ocr/portal/lobby.jsf, or by mail or phone at:"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 306.14,
+            "t": 380.996,
+            "r": 564.936,
+            "b": 315.03286187845305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "U.S. Department of Health and Human Services 200 Independence Avenue SW Room 509F, HHH Building Washington, D.C. 20201 1-800-368-1019, 800-537-7697 (TDD)",
+      "text": "U.S. Department of Health and Human Services 200 Independence Avenue SW Room 509F, HHH Building Washington, D.C. 20201 1-800-368-1019, 800-537-7697 (TDD)"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 306.14,
+            "t": 298.19599999999997,
+            "r": 539.556,
+            "b": 273.632861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Complaint forms are available at http://www.hhs.gov/ocr/office/file/index.html",
+      "text": "Complaint forms are available at http://www.hhs.gov/ocr/office/file/index.html"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 306.14,
+            "t": 256.79600000000005,
+            "r": 566.1680000000003,
+            "b": 163.2928618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            324
+          ]
+        }
+      ],
+      "orig": "You can also file a civil rights complaint with the Washington State Office of the Insurance Commissioner, electronically through the Office of the Insurance Commissioner Complaint portal available at https://www.insurance.wa.gov/filecomplaint-or-check-your-complaint-status, or by phone at 800-562-6900, 360-586-0241 (TDD).",
+      "text": "You can also file a civil rights complaint with the Washington State Office of the Insurance Commissioner, electronically through the Office of the Insurance Commissioner Complaint portal available at https://www.insurance.wa.gov/filecomplaint-or-check-your-complaint-status, or by phone at 800-562-6900, 360-586-0241 (TDD)."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 306.14,
+            "t": 146.45600000000002,
+            "r": 569.5640000000004,
+            "b": 108.09286187845305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            109
+          ]
+        }
+      ],
+      "orig": "Complaint forms are available at https://fortress.wa.gov/oic/onlineservices/cc/pub/c omplaintinformation.aspx",
+      "text": "Complaint forms are available at https://fortress.wa.gov/oic/onlineservices/cc/pub/c omplaintinformation.aspx"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 54.0,
+            "t": 46.875,
+            "r": 188.20148,
+            "b": 35.89499999999998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "11022024_Regence_WA_NDMA",
+      "text": "11022024_Regence_WA_NDMA"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 28.8,
+            "t": 760.656,
+            "r": 150.09599999999995,
+            "b": 749.892861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Language assistance",
+      "text": "Language assistance",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 740.496,
+            "r": 293.0640000000001,
+            "b": 702.5640000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            134
+          ]
+        }
+      ],
+      "orig": "ATENCIÓN: si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística.  Llame al 1-888-344-6347 (TTY: 711).",
+      "text": "ATENCIÓN: si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística.  Llame al 1-888-344-6347 (TTY: 711)."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 691.068,
+            "r": 298.2,
+            "b": 663.144,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "注意：如果您使用繁體中文，您可以免費獲得語言 援助服務。請致電 1-888-344-6347 (TTY: 711) 。",
+      "text": "注意：如果您使用繁體中文，您可以免費獲得語言 援助服務。請致電 1-888-344-6347 (TTY: 711) 。"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 649.576,
+            "r": 286.82,
+            "b": 611.644,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            119
+          ]
+        }
+      ],
+      "orig": "CHÚ Ý:  Nếu bạn nói Tiếng Việt, có các dịch vụ hỗ trợ ngôn ngữ miễn phí dành cho bạn.  Gọi số 1-888344-6347 (TTY: 711).",
+      "text": "CHÚ Ý:  Nếu bạn nói Tiếng Việt, có các dịch vụ hỗ trợ ngôn ngữ miễn phí dành cho bạn.  Gọi số 1-888344-6347 (TTY: 711)."
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 600.0160000000001,
+            "r": 279.236,
+            "b": 556.5640000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "주의 : 한국어를 사용하시는 경우 , 언어 지원 서비스를 무료로 이용하실 수 있습니다 .  1-888344-6347 (TTY: 711) 번으로 전화해 주십시오 .",
+      "text": "주의 : 한국어를 사용하시는 경우 , 언어 지원 서비스를 무료로 이용하실 수 있습니다 .  1-888344-6347 (TTY: 711) 번으로 전화해 주십시오 ."
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 542.956,
+            "r": 302.1,
+            "b": 491.224,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "PAUNAWA:  Kung nagsasalita ka ng Tagalog, maaari kang gumamit ng mga serbisyo ng tulong sa wika nang walang bayad.  Tumawag sa 1-888-344-6347 (TTY: 711).",
+      "text": "PAUNAWA:  Kung nagsasalita ka ng Tagalog, maaari kang gumamit ng mga serbisyo ng tulong sa wika nang walang bayad.  Tumawag sa 1-888-344-6347 (TTY: 711)."
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 478.57599999999996,
+            "r": 301.4519999999999,
+            "b": 440.644,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            129
+          ]
+        }
+      ],
+      "orig": "ВНИМАНИЕ:  Если вы говорите на русском языке, то вам доступны бесплатные услуги перевода. Звоните 1-888-344-6347 (телетайп: 711).",
+      "text": "ВНИМАНИЕ:  Если вы говорите на русском языке, то вам доступны бесплатные услуги перевода. Звоните 1-888-344-6347 (телетайп: 711)."
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 427.996,
+            "r": 288.9960000000001,
+            "b": 390.06399999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "ATTENTION: Si vous parlez français, des services d'aide linguistique vous sont proposés gratuitement. Appelez le 1-888-344-6347 (ATS : 711)",
+      "text": "ATTENTION: Si vous parlez français, des services d'aide linguistique vous sont proposés gratuitement. Appelez le 1-888-344-6347 (ATS : 711)"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 378.452,
+            "r": 298.2,
+            "b": 335.252,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "注意事項：日本語を話される場合、無料の言語支 援をご利用いただけます。 1-888-344-6347 (TTY:711 ）まで、お電話にてご連絡ください。",
+      "text": "注意事項：日本語を話される場合、無料の言語支 援をご利用いただけます。 1-888-344-6347 (TTY:711 ）まで、お電話にてご連絡ください。"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 321.356,
+            "r": 290.6,
+            "b": 283.424,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "ti'go Diné Bizaad , saad 1-888-344-6347 (TTY: 711.)",
+      "text": "ti'go Diné Bizaad , saad 1-888-344-6347 (TTY: 711.)"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 270.7159999999999,
+            "r": 300.056,
+            "b": 205.24400000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            197
+          ]
+        }
+      ],
+      "orig": "FAKATOKANGA'I:  Kapau 'oku ke LeaFakatonga, ko e kau tokoni fakatonu lea 'oku nau fai atu ha tokoni ta'etotongi, pea te ke lava 'o ma'u ia. ha'o telefonimai mai ki he fika 1-888-344-6347 (TTY: 711)",
+      "text": "FAKATOKANGA'I:  Kapau 'oku ke LeaFakatonga, ko e kau tokoni fakatonu lea 'oku nau fai atu ha tokoni ta'etotongi, pea te ke lava 'o ma'u ia. ha'o telefonimai mai ki he fika 1-888-344-6347 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.2,
+            "t": 192.53600000000006,
+            "r": 293.756,
+            "b": 140.80399999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            178
+          ]
+        }
+      ],
+      "orig": "OBAVJEŠTENJE:  Ako govorite srpsko-hrvatski, usluge jezičke pomoći dostupne su vam besplatno. Nazovite 1-888-344-6347 (TTY- Telefon za osobe sa oštećenim govorom ili sluhom: 711)",
+      "text": "OBAVJEŠTENJE:  Ako govorite srpsko-hrvatski, usluge jezičke pomoći dostupne su vam besplatno. Nazovite 1-888-344-6347 (TTY- Telefon za osobe sa oštećenim govorom ili sluhom: 711)"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 739.176,
+            "r": 558.336,
+            "b": 680.544,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "ប្រយ័ត្ន៖ បរើសិនជាអ្នកនិយាយ ភាសាខ្មែរ , បសវាជំនួយខ្ននកភាសា បោយមិនគិត្ឈ្ ន ួល គឺអាចមានសំរារ់រំបរ ើ អ្នក។ ចូ រ ទូរស័ព្ទ 1-888-3446347 (TTY: 711) ។",
+      "text": "ប្រយ័ត្ន៖ បរើសិនជាអ្នកនិយាយ ភាសាខ្មែរ , បសវាជំនួយខ្ននកភាសា បោយមិនគិត្ឈ្ ន ួល គឺអាចមានសំរារ់រំបរ ើ អ្នក។ ចូ រ ទូរស័ព្ទ 1-888-3446347 (TTY: 711) ។"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 668.644,
+            "r": 563.5559999999999,
+            "b": 606.24256,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "ਧਿਆਨ ਧਿਓ : ਜੇ ਤੁਸੀਂ ਪੰ ਜਾਬੀ ਬੋਲਿੇ ਹੋ , ਤਾਂ ਭਾਸ਼ਾ ਧ ਿੱ ਚ ਸਹਾਇਤਾ ਸੇ ਾ ਤੁਹਾਡੇ ਲਈ ਮੁਫਤ ਉਪਲਬਿ ਹੈ। 1-888-3446347 (TTY: 711) ' ਤੇ ਕਾਲ ਕਰੋ।",
+      "text": "ਧਿਆਨ ਧਿਓ : ਜੇ ਤੁਸੀਂ ਪੰ ਜਾਬੀ ਬੋਲਿੇ ਹੋ , ਤਾਂ ਭਾਸ਼ਾ ਧ ਿੱ ਚ ਸਹਾਇਤਾ ਸੇ ਾ ਤੁਹਾਡੇ ਲਈ ਮੁਫਤ ਉਪਲਬਿ ਹੈ। 1-888-3446347 (TTY: 711) ' ਤੇ ਕਾਲ ਕਰੋ।"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 593.956,
+            "r": 576.18,
+            "b": 556.024,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "ACHTUNG: Wenn Sie Deutsch sprechen, stehen Ihnen kostenlose Sprachdienstleistungen zur Verfügung.  Rufnummer: 1-888-344-6347 (TTY: 711)",
+      "text": "ACHTUNG: Wenn Sie Deutsch sprechen, stehen Ihnen kostenlose Sprachdienstleistungen zur Verfügung.  Rufnummer: 1-888-344-6347 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 544.06,
+            "r": 550.7520000000001,
+            "b": 506.5,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            121
+          ]
+        }
+      ],
+      "orig": "ማስታወሻ :-የሚናገሩት ቋንቋ አማርኛ ከሆነ የትርጉም እርዳታ ድርጅቶች፣ በነጻ ሊያግዝዎት ተዘጋጀተዋል፤ በሚከተለው ቁጥር ይደውሉ 1-888-344-6347 ( መስማት ለተሳናቸው :- 711) ፡፡",
+      "text": "ማስታወሻ :-የሚናገሩት ቋንቋ አማርኛ ከሆነ የትርጉም እርዳታ ድርጅቶች፣ በነጻ ሊያግዝዎት ተዘጋጀተዋል፤ በሚከተለው ቁጥር ይደውሉ 1-888-344-6347 ( መስማት ለተሳናቸው :- 711) ፡፡"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 493.57599999999996,
+            "r": 554.9719999999999,
+            "b": 441.904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            163
+          ]
+        }
+      ],
+      "orig": "УВАГА!  Якщо ви розмовляєте українською мовою, ви можете звернутися до безкоштовної служби мовної підтримки.  Телефонуйте за номером 1-888-344-6347 (телетайп: 711)",
+      "text": "УВАГА!  Якщо ви розмовляєте українською мовою, ви можете звернутися до безкоштовної служби мовної підтримки.  Телефонуйте за номером 1-888-344-6347 (телетайп: 711)"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 427.876,
+            "r": 576.7439999999999,
+            "b": 385.204,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": "ध्यान दिनुहोस् : तपार्इंले नेपाली बोल्नुहुन्छ भने तपार्इंको दनम्ति भाषा सहायता सेवाहरू दनिः शुल्क रूपमा उपलब्ध छ । फोन गनुहोस् 1-888-344-6347 ( दिदिवार्इ : 711",
+      "text": "ध्यान दिनुहोस् : तपार्इंले नेपाली बोल्नुहुन्छ भने तपार्इंको दनम्ति भाषा सहायता सेवाहरू दनिः शुल्क रूपमा उपलब्ध छ । फोन गनुहोस् 1-888-344-6347 ( दिदिवार्इ : 711"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 372.116,
+            "r": 554.3839999999998,
+            "b": 334.18399999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "ATENȚIE:  Dacă vorbiți limba română, vă stau la dispoziție servicii de asistență lingvistică, gratuit. Sunați la 1-888-344-6347 (TTY: 711)",
+      "text": "ATENȚIE:  Dacă vorbiți limba română, vă stau la dispoziție servicii de asistență lingvistică, gratuit. Sunați la 1-888-344-6347 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 321.536,
+            "r": 575.196,
+            "b": 283.604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "MAANDO: To a waawi [Adamawa], e woodi balloojima to ekkitaaki wolde caahu. Noddu 1-888-344-6347 (TTY: 711)",
+      "text": "MAANDO: To a waawi [Adamawa], e woodi balloojima to ekkitaaki wolde caahu. Noddu 1-888-344-6347 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 269.576,
+            "r": 573.816,
+            "b": 228.644,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "โปรดทราบ : ถ้าคุณพูดภาษาไทย คุณสามารถใช้บริการช่วยเหลือทางภาษาได้ฟรี โทร 1-888344-6347 (TTY: 711)",
+      "text": "โปรดทราบ : ถ้าคุณพูดภาษาไทย คุณสามารถใช้บริการช่วยเหลือทางภาษาได้ฟรี โทร 1-888344-6347 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 217.87951999999996,
+            "r": 565.716,
+            "b": 178.36400000000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            154
+          ]
+        }
+      ],
+      "orig": "ໂປດຊາບ : ຖ້ າວ່ າ ທ່ ານເວ   ້ າພາສາ ລາວ , ການບ ໍ ລ ິ ການຊ່ວຍເຫ  ຼື ອດ້ານພາສາ , ໂດຍບ ໍ ່ ເສ ັ ຽຄ່າ , ແມ່ ນມ ີ ພ ້ ອມໃຫ້ທ່ານ . ໂທຣ 1-888-344-6347 (TTY: 711)",
+      "text": "ໂປດຊາບ : ຖ້ າວ່ າ ທ່ ານເວ   ້ າພາສາ ລາວ , ການບ ໍ ລ ິ ການຊ່ວຍເຫ  ຼື ອດ້ານພາສາ , ໂດຍບ ໍ ່ ເສ ັ ຽຄ່າ , ແມ່ ນມ ີ ພ ້ ອມໃຫ້ທ່ານ . ໂທຣ 1-888-344-6347 (TTY: 711)"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 311.18,
+            "t": 165.716,
+            "r": 562.6759999999997,
+            "b": 127.78399999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            115
+          ]
+        }
+      ],
+      "orig": "Afaan dubbattan Oroomiffaa tiif, tajaajila gargaarsa afaanii tola ni jira. 1-888-344-6347 (TTY: 711) tiin bilbilaa.",
+      "text": "Afaan dubbattan Oroomiffaa tiif, tajaajila gargaarsa afaanii tola ni jira. 1-888-344-6347 (TTY: 711) tiin bilbilaa."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 252.92,
+            "t": 124.31600000000003,
+            "r": 583.3199999999999,
+            "b": 100.16399999999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "توجه : اگر به زبان فارسی صحبت می کن  ید، تسهیلات زبان  ی بصورت رایگان برای شما فراهم می باشد . با 1-888-344-6347 (TTY: 711) تماس بگیرید  .",
+      "text": "توجه : اگر به زبان فارسی صحبت می کن  ید، تسهیلات زبان  ی بصورت رایگان برای شما فراهم می باشد . با 1-888-344-6347 (TTY: 711) تماس بگیرید  ."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 126.68,
+            "t": 82.476,
+            "r": 583.296,
+            "b": 58.34400000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "ملحوظة:  إذا كنت تتحدث فاذكر اللغة، فإن خدمات المساعدة اللغویة تتوافر لك بالمجان.  اتصل برقم 1-888-344-6347 (رقم هاتف الصم والبكم (TTY: 711",
+      "text": "ملحوظة:  إذا كنت تتحدث فاذكر اللغة، فإن خدمات المساعدة اللغویة تتوافر لك بالمجان.  اتصل برقم 1-888-344-6347 (رقم هاتف الصم والبكم (TTY: 711"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 28.8,
+            "t": 39.674999999999955,
+            "r": 163.00148000000002,
+            "b": 28.69500000000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "11022024_Regence_WA_NDMA",
+      "text": "11022024_Regence_WA_NDMA"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 383.4366760253906,
+            "t": 781.9852313995361,
+            "r": 540.3013305664062,
+            "b": 743.7161064147949,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 25.483980178833008,
+            "t": 657.2121887207031,
+            "r": 589.0631713867188,
+            "b": 64.93511962890625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 26.510681629180908,
+              "t": 137.27113439142704,
+              "r": 98.6342071890831,
+              "b": 148.46541613340378,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Cost Share Details",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 458.7177109718323,
+              "t": 137.37610568106174,
+              "r": 522.6295146942139,
+              "b": 148.6967750787735,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "In-Network Out-of-Network",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 27.574561551213264,
+              "t": 155.60427540540695,
+              "r": 89.53908050060272,
+              "b": 166.35860365629196,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Annual Deductible",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 176.45717906951904,
+              "t": 155.60799145698547,
+              "r": 337.44552278518677,
+              "b": 167.13266050815582,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "The total deductible You pay per calendar year",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 466.3194603919983,
+              "t": 156.4820619225502,
+              "r": 516.9008383750916,
+              "b": 176.49285411834717,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "$50 Individual $150 Family",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.10806155204773,
+              "t": 184.01777696609497,
+              "r": 69.6780276298523,
+              "b": 194.86839175224304,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Annual Limit",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 174.56228852272034,
+              "t": 183.8356397151947,
+              "r": 386.93992805480957,
+              "b": 237.56243252754211,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "This plan will pay for Covered Services only up to this limit during each coverage period, even if Your own need is greater. You are responsible for all expenses above this limit Preventive dental services do not accumulate toward the overall annual limit",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 462.6914780139923,
+              "t": 183.89776945114136,
+              "r": 519.6633841991425,
+              "b": 194.68555760383606,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "$1,500 Individual",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.9215430021286,
+              "t": 244.67330121994019,
+              "r": 401.5482039451599,
+              "b": 254.5677638053894,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Preventive and Diagnostic Services",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 464.98725152015686,
+              "t": 246.96151566505432,
+              "r": 516.6926481723785,
+              "b": 257.89334988594055,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "What You Pay",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.834510639309883,
+              "t": 263.52495217323303,
+              "r": 61.46292728185654,
+              "b": 274.0652358531952,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Cleanings",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.73153924942017,
+              "t": 263.04972100257874,
+              "r": 379.3059735298157,
+              "b": 274.2141602039337,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2 per calendar year, additional covered with qualifying diagnosis",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 466.0046033859253,
+              "t": 263.05428171157837,
+              "r": 515.3426222801208,
+              "b": 273.8529996871948,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Covered in full",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.696745991706848,
+              "t": 281.49424266815186,
+              "r": 137.51703882217407,
+              "b": 292.44287300109863,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Other Preventive Dental Services",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 174.89916467666626,
+              "t": 282.45340299606323,
+              "r": 361.58247566223145,
+              "b": 347.5826916694641,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Sealants - limited to permanent molars and premolars, once every 12 months, for Members under 17 years of age Space maintainers for Members under 12 years of age Topical fluoride application - 2 per calendar year for Members under 18 years of age",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 466.0423216819763,
+              "t": 280.99250292778015,
+              "r": 515.07603931427,
+              "b": 291.58736515045166,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Covered in full",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.893504306674004,
+              "t": 356.1665987968445,
+              "r": 61.94323045015335,
+              "b": 366.96215867996216,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Oral Exams",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 171.91644418239594,
+              "t": 356.11238193511963,
+              "r": 375.1632137298584,
+              "b": 376.83927822113037,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Preventive oral examinations, limited to two per Member per calendar year",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.8815088272095,
+              "t": 356.30169105529785,
+              "r": 513.114755153656,
+              "b": 366.8387460708618,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Covered in full",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 27.623980671167374,
+              "t": 384.4180474281311,
+              "r": 105.4900369644165,
+              "b": 395.3275809288025,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Silver Diamine Fluoride",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 171.5656841993332,
+              "t": 384.1388473510742,
+              "r": 274.3969873189926,
+              "b": 394.9856424331665,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2 per tooth per calendar year",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 466.70736718177795,
+              "t": 384.226674079895,
+              "r": 513.9747121334076,
+              "b": 394.73091316223145,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Covered in full",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 29.400457367300987,
+              "t": 402.43768215179443,
+              "r": 54.0267248749733,
+              "b": 413.1759023666382,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "X-rays",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.89310264587402,
+              "t": 399.9737524986267,
+              "r": 331.7022566795349,
+              "b": 450.15776538848877,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Bitewing x-rays - 2 sets per calendar year Complete intra-oral mouth x-ray - once in a 3-year period Panoramic mouth x-ray - once in a 3-year period",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.106098651886,
+              "t": 401.2177586555481,
+              "r": 514.2166538238525,
+              "b": 411.79038190841675,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Covered in full",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 27.45496690273285,
+              "t": 456.79014778137207,
+              "r": 362.8921947479248,
+              "b": 468.55024909973145,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Basic and Restorative Services ( unless stated otherwise, a deductible applies )",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 462.60602355003357,
+              "t": 457.0914545059204,
+              "r": 519.8021552562714,
+              "b": 467.7700414657593,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "What You Pay",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 29.492406219244003,
+              "t": 473.45686626434326,
+              "r": 142.5102756023407,
+              "b": 484.67299938201904,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Complex Oral Surgery Procedures",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 171.93807673454285,
+              "t": 473.5575017929077,
+              "r": 383.20000100135803,
+              "b": 494.8837652206421,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Including surgical extraction of teeth, impactions, alveoloplasty, vestibuloplasty and residual root removal",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 482.6800570487976,
+              "t": 474.96329402923584,
+              "r": 496.4006419181824,
+              "b": 485.4520425796509,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "20%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 29.23773628473282,
+              "t": 502.2615280151367,
+              "r": 145.47947365045547,
+              "b": 523.6390266418457,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Emergency and Other Basic Dental Services",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 174.24067449569702,
+              "t": 502.8642120361328,
+              "r": 295.0434010028839,
+              "b": 514.168701171875,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Emergency treatment for pain relief",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 483.12602043151855,
+              "t": 503.6795644760132,
+              "r": 498.33429288864136,
+              "b": 514.3010587692261,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "20%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.81255452334881,
+              "t": 531.9528551101685,
+              "r": 94.63140344619751,
+              "b": 542.4056119918823,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Endodontic Services",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.98447370529175,
+              "t": 530.6977338790894,
+              "r": 358.49945878982544,
+              "b": 553.2487020492554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Services including root canal treatment, pulpotomy and apicoectomy",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 481.889048576355,
+              "t": 532.3825674057007,
+              "r": 498.8651728630066,
+              "b": 543.0284090042114,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "20%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 29.707027778029442,
+              "t": 560.5364856719971,
+              "r": 53.5978137254715,
+              "b": 571.0167655944824,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Fillings",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.48326075077057,
+              "t": 560.3444242477417,
+              "r": 334.79468631744385,
+              "b": 571.3849744796753,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Consisting of composite or amalgam restorations",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 481.95813155174255,
+              "t": 561.0575180053711,
+              "r": 498.68118691444397,
+              "b": 571.7977848052979,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "20%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 28.497602969408035,
+              "t": 579.5271368026733,
+              "r": 95.72220849990845,
+              "b": 590.4873762130737,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Periodontal Services",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.73829627037048,
+              "t": 578.560266494751,
+              "r": 392.1608865261078,
+              "b": 629.1737976074219,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Periodontal maintenance - 2 per calendar year (in lieu of preventive cleanings), additional covered with qualifying diagnosis Debridement - once in a 3-year period Scaling and root planing - 1 in a 2-year period per quadrant",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 482.3348774909973,
+              "t": 580.4763288497925,
+              "r": 499.1378741264343,
+              "b": 591.420407295227,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "20%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 26.112076222896576,
+              "t": 634.611644744873,
+              "r": 288.8892676830292,
+              "b": 644.0514831542969,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Major Services ( unless stated otherwise, a deductible applies )",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 465.5488238334656,
+              "t": 636.7045602798462,
+              "r": 521.3221487998962,
+              "b": 647.5083417892456,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "What You Pay",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 27.370201587677002,
+              "t": 653.6277017593384,
+              "r": 131.75009793043137,
+              "b": 664.508900642395,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Bridges (fixed partial dentures)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 173.96037578582764,
+              "t": 654.7290468215942,
+              "r": 298.58448338508606,
+              "b": 665.7991666793823,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Replacement 5 years after placement",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 481.5928153991699,
+              "t": 654.8579816818237,
+              "r": 499.4239549636841,
+              "b": 665.4539289474487,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "50%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 27.66003492474556,
+              "t": 670.9800262451172,
+              "r": 153.4526491165161,
+              "b": 692.5165939331055,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Crowns, Crown Build-Ups, Inlays and Onlays",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.8908166885376,
+              "t": 670.649432182312,
+              "r": 359.07636046409607,
+              "b": 692.1228380203247,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Crown repair limited to 1 per tooth per Member lifetime, Replacement 5 years after placement",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 483.63222551345825,
+              "t": 671.1370134353638,
+              "r": 497.46946144104004,
+              "b": 681.7546968460083,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "50%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 27.636717319488525,
+              "t": 700.1287612915039,
+              "r": 150.42539447546005,
+              "b": 723.0031604766846,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Dental Implant Crown and Abutment Related Procedures",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 173.56709027290344,
+              "t": 699.8880758285522,
+              "r": 307.11779403686523,
+              "b": 710.5071706771851,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Limited to 1 per tooth in a 5-year period",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 482.7354242801666,
+              "t": 700.5765047073364,
+              "r": 497.85084652900696,
+              "b": 710.8707571029663,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "50%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 19,
+        "num_cols": 3,
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 26.510681629180908,
+                "t": 137.27113439142704,
+                "r": 98.6342071890831,
+                "b": 148.46541613340378,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Cost Share Details",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 458.7177109718323,
+                "t": 137.37610568106174,
+                "r": 522.6295146942139,
+                "b": 148.6967750787735,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "In-Network Out-of-Network",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 27.574561551213264,
+                "t": 155.60427540540695,
+                "r": 89.53908050060272,
+                "b": 166.35860365629196,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Annual Deductible",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 176.45717906951904,
+                "t": 155.60799145698547,
+                "r": 337.44552278518677,
+                "b": 167.13266050815582,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "The total deductible You pay per calendar year",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 466.3194603919983,
+                "t": 156.4820619225502,
+                "r": 516.9008383750916,
+                "b": 176.49285411834717,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "$50 Individual $150 Family",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.10806155204773,
+                "t": 184.01777696609497,
+                "r": 69.6780276298523,
+                "b": 194.86839175224304,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Annual Limit",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 174.56228852272034,
+                "t": 183.8356397151947,
+                "r": 386.93992805480957,
+                "b": 237.56243252754211,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "This plan will pay for Covered Services only up to this limit during each coverage period, even if Your own need is greater. You are responsible for all expenses above this limit Preventive dental services do not accumulate toward the overall annual limit",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 462.6914780139923,
+                "t": 183.89776945114136,
+                "r": 519.6633841991425,
+                "b": 194.68555760383606,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "$1,500 Individual",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.9215430021286,
+                "t": 244.67330121994019,
+                "r": 401.5482039451599,
+                "b": 254.5677638053894,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Preventive and Diagnostic Services",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 28.9215430021286,
+                "t": 244.67330121994019,
+                "r": 401.5482039451599,
+                "b": 254.5677638053894,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Preventive and Diagnostic Services",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 464.98725152015686,
+                "t": 246.96151566505432,
+                "r": 516.6926481723785,
+                "b": 257.89334988594055,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "What You Pay",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.834510639309883,
+                "t": 263.52495217323303,
+                "r": 61.46292728185654,
+                "b": 274.0652358531952,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Cleanings",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.73153924942017,
+                "t": 263.04972100257874,
+                "r": 379.3059735298157,
+                "b": 274.2141602039337,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2 per calendar year, additional covered with qualifying diagnosis",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 466.0046033859253,
+                "t": 263.05428171157837,
+                "r": 515.3426222801208,
+                "b": 273.8529996871948,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Covered in full",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.696745991706848,
+                "t": 281.49424266815186,
+                "r": 137.51703882217407,
+                "b": 292.44287300109863,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Other Preventive Dental Services",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 174.89916467666626,
+                "t": 282.45340299606323,
+                "r": 361.58247566223145,
+                "b": 347.5826916694641,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Sealants - limited to permanent molars and premolars, once every 12 months, for Members under 17 years of age Space maintainers for Members under 12 years of age Topical fluoride application - 2 per calendar year for Members under 18 years of age",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 466.0423216819763,
+                "t": 280.99250292778015,
+                "r": 515.07603931427,
+                "b": 291.58736515045166,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Covered in full",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.893504306674004,
+                "t": 356.1665987968445,
+                "r": 61.94323045015335,
+                "b": 366.96215867996216,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Oral Exams",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 171.91644418239594,
+                "t": 356.11238193511963,
+                "r": 375.1632137298584,
+                "b": 376.83927822113037,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Preventive oral examinations, limited to two per Member per calendar year",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.8815088272095,
+                "t": 356.30169105529785,
+                "r": 513.114755153656,
+                "b": 366.8387460708618,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Covered in full",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 27.623980671167374,
+                "t": 384.4180474281311,
+                "r": 105.4900369644165,
+                "b": 395.3275809288025,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Silver Diamine Fluoride",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 171.5656841993332,
+                "t": 384.1388473510742,
+                "r": 274.3969873189926,
+                "b": 394.9856424331665,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2 per tooth per calendar year",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 466.70736718177795,
+                "t": 384.226674079895,
+                "r": 513.9747121334076,
+                "b": 394.73091316223145,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Covered in full",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 29.400457367300987,
+                "t": 402.43768215179443,
+                "r": 54.0267248749733,
+                "b": 413.1759023666382,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "X-rays",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.89310264587402,
+                "t": 399.9737524986267,
+                "r": 331.7022566795349,
+                "b": 450.15776538848877,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Bitewing x-rays - 2 sets per calendar year Complete intra-oral mouth x-ray - once in a 3-year period Panoramic mouth x-ray - once in a 3-year period",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.106098651886,
+                "t": 401.2177586555481,
+                "r": 514.2166538238525,
+                "b": 411.79038190841675,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Covered in full",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 27.45496690273285,
+                "t": 456.79014778137207,
+                "r": 362.8921947479248,
+                "b": 468.55024909973145,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Basic and Restorative Services ( unless stated otherwise, a deductible applies )",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 27.45496690273285,
+                "t": 456.79014778137207,
+                "r": 362.8921947479248,
+                "b": 468.55024909973145,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Basic and Restorative Services ( unless stated otherwise, a deductible applies )",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 462.60602355003357,
+                "t": 457.0914545059204,
+                "r": 519.8021552562714,
+                "b": 467.7700414657593,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "What You Pay",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 29.492406219244003,
+                "t": 473.45686626434326,
+                "r": 142.5102756023407,
+                "b": 484.67299938201904,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Complex Oral Surgery Procedures",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 171.93807673454285,
+                "t": 473.5575017929077,
+                "r": 383.20000100135803,
+                "b": 494.8837652206421,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Including surgical extraction of teeth, impactions, alveoloplasty, vestibuloplasty and residual root removal",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 482.6800570487976,
+                "t": 474.96329402923584,
+                "r": 496.4006419181824,
+                "b": 485.4520425796509,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "20%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 29.23773628473282,
+                "t": 502.2615280151367,
+                "r": 145.47947365045547,
+                "b": 523.6390266418457,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Emergency and Other Basic Dental Services",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 174.24067449569702,
+                "t": 502.8642120361328,
+                "r": 295.0434010028839,
+                "b": 514.168701171875,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Emergency treatment for pain relief",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 483.12602043151855,
+                "t": 503.6795644760132,
+                "r": 498.33429288864136,
+                "b": 514.3010587692261,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "20%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.81255452334881,
+                "t": 531.9528551101685,
+                "r": 94.63140344619751,
+                "b": 542.4056119918823,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Endodontic Services",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.98447370529175,
+                "t": 530.6977338790894,
+                "r": 358.49945878982544,
+                "b": 553.2487020492554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Services including root canal treatment, pulpotomy and apicoectomy",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 481.889048576355,
+                "t": 532.3825674057007,
+                "r": 498.8651728630066,
+                "b": 543.0284090042114,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "20%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 29.707027778029442,
+                "t": 560.5364856719971,
+                "r": 53.5978137254715,
+                "b": 571.0167655944824,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Fillings",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.48326075077057,
+                "t": 560.3444242477417,
+                "r": 334.79468631744385,
+                "b": 571.3849744796753,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Consisting of composite or amalgam restorations",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 481.95813155174255,
+                "t": 561.0575180053711,
+                "r": 498.68118691444397,
+                "b": 571.7977848052979,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "20%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 28.497602969408035,
+                "t": 579.5271368026733,
+                "r": 95.72220849990845,
+                "b": 590.4873762130737,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Periodontal Services",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.73829627037048,
+                "t": 578.560266494751,
+                "r": 392.1608865261078,
+                "b": 629.1737976074219,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Periodontal maintenance - 2 per calendar year (in lieu of preventive cleanings), additional covered with qualifying diagnosis Debridement - once in a 3-year period Scaling and root planing - 1 in a 2-year period per quadrant",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 482.3348774909973,
+                "t": 580.4763288497925,
+                "r": 499.1378741264343,
+                "b": 591.420407295227,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "20%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 26.112076222896576,
+                "t": 634.611644744873,
+                "r": 288.8892676830292,
+                "b": 644.0514831542969,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Major Services ( unless stated otherwise, a deductible applies )",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 26.112076222896576,
+                "t": 634.611644744873,
+                "r": 288.8892676830292,
+                "b": 644.0514831542969,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Major Services ( unless stated otherwise, a deductible applies )",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 465.5488238334656,
+                "t": 636.7045602798462,
+                "r": 521.3221487998962,
+                "b": 647.5083417892456,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "What You Pay",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 27.370201587677002,
+                "t": 653.6277017593384,
+                "r": 131.75009793043137,
+                "b": 664.508900642395,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Bridges (fixed partial dentures)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 173.96037578582764,
+                "t": 654.7290468215942,
+                "r": 298.58448338508606,
+                "b": 665.7991666793823,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Replacement 5 years after placement",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 481.5928153991699,
+                "t": 654.8579816818237,
+                "r": 499.4239549636841,
+                "b": 665.4539289474487,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "50%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 27.66003492474556,
+                "t": 670.9800262451172,
+                "r": 153.4526491165161,
+                "b": 692.5165939331055,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Crowns, Crown Build-Ups, Inlays and Onlays",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.8908166885376,
+                "t": 670.649432182312,
+                "r": 359.07636046409607,
+                "b": 692.1228380203247,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Crown repair limited to 1 per tooth per Member lifetime, Replacement 5 years after placement",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 483.63222551345825,
+                "t": 671.1370134353638,
+                "r": 497.46946144104004,
+                "b": 681.7546968460083,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "50%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 27.636717319488525,
+                "t": 700.1287612915039,
+                "r": 150.42539447546005,
+                "b": 723.0031604766846,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Dental Implant Crown and Abutment Related Procedures",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 173.56709027290344,
+                "t": 699.8880758285522,
+                "r": 307.11779403686523,
+                "b": 710.5071706771851,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Limited to 1 per tooth in a 5-year period",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 482.7354242801666,
+                "t": 700.5765047073364,
+                "r": 497.85084652900696,
+                "b": 710.8707571029663,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "50%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 26.956470489501953,
+            "t": 774.7758560180664,
+            "r": 589.2462158203125,
+            "b": 723.8778457641602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 21.336000000000013,
+              "r": 252.057,
+              "b": 31.668000000000006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Major Services ( unless stated otherwise, a deductible applies )",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.76,
+              "t": 21.362999999999943,
+              "r": 516.9839999999999,
+              "b": 31.649999999999977,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "What You Pay",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 38.982000000000085,
+              "r": 114.057,
+              "b": 49.17000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Dentures (full and partial)",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 175.44,
+              "t": 38.982000000000085,
+              "r": 299.17199999999997,
+              "b": 49.17000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Replacement 5 years after placement",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 484.79999999999995,
+              "t": 38.982000000000085,
+              "r": 499.56899999999996,
+              "b": 49.17000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "50%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 56.982000000000085,
+              "r": 58.89,
+              "b": 67.17000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Implants",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 175.44,
+              "t": 56.982000000000085,
+              "r": 313.46399999999994,
+              "b": 67.17000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Limited to 1 per tooth per Member lifetime",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 484.79999999999995,
+              "t": 56.982000000000085,
+              "r": 499.56899999999996,
+              "b": 67.17000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "50%",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 3,
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 21.336000000000013,
+                "r": 252.057,
+                "b": 31.668000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Major Services ( unless stated otherwise, a deductible applies )",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 21.336000000000013,
+                "r": 252.057,
+                "b": 31.668000000000006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Major Services ( unless stated otherwise, a deductible applies )",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.76,
+                "t": 21.362999999999943,
+                "r": 516.9839999999999,
+                "b": 31.649999999999977,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "What You Pay",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 38.982000000000085,
+                "r": 114.057,
+                "b": 49.17000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Dentures (full and partial)",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 175.44,
+                "t": 38.982000000000085,
+                "r": 299.17199999999997,
+                "b": 49.17000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Replacement 5 years after placement",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 484.79999999999995,
+                "t": 38.982000000000085,
+                "r": 499.56899999999996,
+                "b": 49.17000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "50%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 56.982000000000085,
+                "r": 58.89,
+                "b": 67.17000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Implants",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 175.44,
+                "t": 56.982000000000085,
+                "r": 313.46399999999994,
+                "b": 67.17000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Limited to 1 per tooth per Member lifetime",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 484.79999999999995,
+                "t": 56.982000000000085,
+                "r": 499.56899999999996,
+                "b": 67.17000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "50%",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 26.016284942626953,
+            "t": 665.5442047119141,
+            "r": 589.4108276367188,
+            "b": 563.1348724365234,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 132.00299999999993,
+              "r": 131.544,
+              "b": 142.29000000000008,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Frequently Asked Questions",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 149.86200000000008,
+              "r": 78.744,
+              "b": 160.05000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Balance billing",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 175.68,
+              "t": 149.86200000000008,
+              "r": 572.937,
+              "b": 170.37,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "You will pay the most if You use an Out-of-Network dental provider, and You might receive a bill from a dental provider for the difference between the provider's charge and what Your plan pays.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 177.7020000000001,
+              "r": 128.424,
+              "b": 187.89,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "How is my privacy protected?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 175.68,
+              "t": 177.7020000000001,
+              "r": 578.0789999999989,
+              "b": 208.52999999999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Regence is committed to the confidentiality and security of Your personal information. We maintain physical, administrative and technical safeguards to protect against unauthorized access, use, or disclosure of Your personal information. You can view Our full privacy practices online at regence.com.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 30.72,
+              "t": 215.86200000000008,
+              "r": 147.864,
+              "b": 226.05000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Is there a cost for Covered in full ?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 175.68,
+              "t": 215.86200000000008,
+              "r": 394.452,
+              "b": 226.05000000000007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "No, if Your benefit is covered in full there is no copay or deductible.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 2,
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 132.00299999999993,
+                "r": 131.544,
+                "b": 142.29000000000008,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Frequently Asked Questions",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 149.86200000000008,
+                "r": 78.744,
+                "b": 160.05000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Balance billing",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 175.68,
+                "t": 149.86200000000008,
+                "r": 572.937,
+                "b": 170.37,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "You will pay the most if You use an Out-of-Network dental provider, and You might receive a bill from a dental provider for the difference between the provider's charge and what Your plan pays.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 177.7020000000001,
+                "r": 128.424,
+                "b": 187.89,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "How is my privacy protected?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 175.68,
+                "t": 177.7020000000001,
+                "r": 578.0789999999989,
+                "b": 208.52999999999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Regence is committed to the confidentiality and security of Your personal information. We maintain physical, administrative and technical safeguards to protect against unauthorized access, use, or disclosure of Your personal information. You can view Our full privacy practices online at regence.com.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 30.72,
+                "t": 215.86200000000008,
+                "r": 147.864,
+                "b": 226.05000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Is there a cost for Covered in full ?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 175.68,
+                "t": 215.86200000000008,
+                "r": 394.452,
+                "b": 226.05000000000007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "No, if Your benefit is covered in full there is no copay or deductible.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 4
+    }
+  }
+}

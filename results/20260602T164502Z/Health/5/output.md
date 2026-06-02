@@ -1,0 +1,238 @@
+Summary of Benefits and Coverage: What this Plan Covers &amp; What You Pay for Covered Services
+
+## Geisinger All-Access HMO
+
+<!-- image -->
+
+Coverage Period: 12/01/2025 - 11/30/2026
+
+## Coverage for: Individual and Family |  Plan Type: HMO
+
+The Summary of Benefits and Coverage (SBC) document will help you choose a health plan. The SBC shows you how you and the plan would share the cost for covered health care services. NOTE: Information about the cost of this plan (called the premium) will be provided separately. This is only a summary. For more information about your coverage, or to get a copy of the complete terms of coverage, call 1-800-447-4000 or visit www.GeisingerHealthPlan.com.  For general definitions of common terms, such as allowed amount, balance billing, coinsurance, copayment, deductible, provider, or other underlined terms see the Glossary.  You can view the Glossary at www.healthcare.gov/sbc-glossary or call 1-800-447-4000 to request a copy.
+
+| Important Questions                                         | Answers                                                                                                      | Why This Matters:                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| What is the overall deductible?                             | $250 individual/ $750 family.                                                                                | Generally, you must pay all of the costs from providers up to the deductible amount before this plan begins to pay. If you have other family members on the plan, each family member must meet their own individual deductible until the total amount of deductible expenses paid by all family members meets the overall family deductible.                                                                                                                         |
+| Are there services covered before you meet your deductible? | Yes. Preventive care and primary care services are covered before you meet your deductible.                  | This plan covers some items and services even if you haven't yet met the deductible amount. But a copayment or coinsurance may apply. For example, this plan covers certain preventive services without cost sharing and before you meet your deductible. See a list of covered preventive services at www.healthcare.gov/coverage/preventive-care-benefits.                                                                                                         |
+| Are there other deductibles for specific services?          | No.                                                                                                          | You don't have to meet deductibles for specific services.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| What is the out-of- pocket limit for this plan?             | Not Applicable.                                                                                              | This plan does not have an out-of-pocket limit on your expenses.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| What is not included in the out-of-pocket limit?            | Copayments for certain services, premiums, balance billing charges, and health care this plan doesn't cover. | Even though you pay these expenses, they don't count toward the out-of-pocket limit.                                                                                                                                                                                                                                                                                                                                                                                 |
+| Will you pay less if you use a network provider?            | Yes. See www.GeisingerHealthPlan.com or call 1-800-447-4000 for a list of network providers.                 | This plan uses a provider network. You will pay less if you use a provider in the plan's network. You will pay the most if you use an out-of-network provider, and you might receive a bill from a provider for the difference between the provider's charge and what your plan pays (balance billing). Be aware, your network provider might use an out-of-network provider for some services (such as lab work). Check with your provider before you get services. |
+| Do you need a referral to see a specialist?                 | No.                                                                                                          | You can see the specialist you choose without a referral.                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+HHS - OMB control NUMBER: 0938-1146/Expiration DATE: 05/31/2026
+
+MOSHANNON VALLEY EMS SBC ID: 94627
+
+Page 1 of 6
+
+<!-- image -->
+
+All copayment and coinsurance costs shown in this chart are after your deductible has been met, if a deductible applies.
+
+| Common Medical Event                                                                                                                                | Services You May Need                            | What You Will Pay                               | What You Will Pay                                  | Limitations, Exceptions, & Other Important Information                                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Common Medical Event                                                                                                                                | Services You May Need                            | Participating Provider (You will pay the least) | Non-Participating Provider (You will pay the most) | Limitations, Exceptions, & Other Important Information                                                                                                                         |
+| If you visit a health care provider's office or clinic                                                                                              | Primary care visit to treat an injury or illness | $20 copayment/visit Deductible does not apply.  | Not covered                                        | None.                                                                                                                                                                          |
+| If you visit a health care provider's office or clinic                                                                                              | Specialist visit                                 | $35 copayment/visit Deductible does not apply.  | Not covered                                        | None.                                                                                                                                                                          |
+| If you visit a health care provider's office or clinic                                                                                              | Preventive care/screening/immunization           | No charge Deductible does not apply.            | Not covered                                        | You may have to pay for services that aren't preventive. Ask your provider if the services needed are preventive. Then check what your plan will pay for.                      |
+| If you have a test                                                                                                                                  | Diagnostic test (x-ray, blood work)              | 10% coinsurance                                 | Not covered                                        | Diagnostic: Cost sharing does not apply to mental health/substance use disorder diagnosis for participating providers. Imaging: Precertification/prior authorization required. |
+| If you have a test                                                                                                                                  | Imaging (CT/PET scans, MRIs)                     | 10% coinsurance                                 | Not covered                                        | Diagnostic: Cost sharing does not apply to mental health/substance use disorder diagnosis for participating providers. Imaging: Precertification/prior authorization required. |
+| If you need drugs to treat your illness or condition More information about prescription drug coverage is available at www.GeisingerHealthPl an.com | Generic drugs (Tier 1)                           | $15 copayment Deductible does not apply.        | Not covered                                        | Covers up to a 34-day supply.                                                                                                                                                  |
+| If you need drugs to treat your illness or condition More information about prescription drug coverage is available at www.GeisingerHealthPl an.com | Preferred brand drugs (Tier 2)                   | $30 copayment Deductible does not apply.        | Not covered                                        | Covers up to a 34-day supply.                                                                                                                                                  |
+| If you need drugs to treat your illness or condition More information about prescription drug coverage is available at www.GeisingerHealthPl an.com | Non-preferred brand drugs (Tier 3)               | $45 copayment Deductible does not apply.        | Not covered                                        | Covers up to a 34-day supply.                                                                                                                                                  |
+| If you need drugs to treat your illness or condition More information about prescription drug coverage is available at www.GeisingerHealthPl an.com | Specialty drugs                                  | Copayment varies by drug based on above         | Not covered                                        | Covers up to a 34-day supply.                                                                                                                                                  |
+| If you have outpatient surgery                                                                                                                      | Facility fee (e.g., ambulatory surgery center)   | 10% coinsurance                                 | Not covered                                        | Precertification/prior authorization may be required.                                                                                                                          |
+| If you have outpatient surgery                                                                                                                      | Physician/surgeon fees                           | 10% coinsurance                                 | Not covered                                        | Precertification/prior authorization may be required.                                                                                                                          |
+
+MOSHANNON VALLEY EMS SBC ID: 94627
+
+Page 2 of 6
+
+| Common Medical                                                            |                                    | What You Will Pay                               | What You Will Pay                                  | Limitations, Exceptions, & Other Important                                                                                                                                                          |
+|---------------------------------------------------------------------------|------------------------------------|-------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Common Medical                                                            | Services You May Need              | Participating Provider (You will pay the least) | Non-Participating Provider (You will pay the most) | Information                                                                                                                                                                                         |
+| If you need immediate medical attention                                   | Emergency room care                | $100 copayment/visit Deductible does not apply. | $100 copayment/visit Deductible does not apply.    | Emergency services: Copay waived if admitted to the hospital. Emergency medical transportation: None. Urgent care: Mental health & substance abuse urgent care visit $0. Deductible does not apply. |
+| If you need immediate medical attention                                   | Emergency medical transportation   | No charge Deductible does not apply.            | No charge Deductible does not apply.               | Emergency services: Copay waived if admitted to the hospital. Emergency medical transportation: None. Urgent care: Mental health & substance abuse urgent care visit $0. Deductible does not apply. |
+| If you need immediate medical attention                                   | Urgent care                        | $20 copayment/visit Deductible does not apply.  | $20 copayment/visit Deductible does not apply.     | Emergency services: Copay waived if admitted to the hospital. Emergency medical transportation: None. Urgent care: Mental health & substance abuse urgent care visit $0. Deductible does not apply. |
+| If you have a hospital stay                                               | Facility fee (e.g., hospital room) | 10% coinsurance                                 | Not covered                                        | Precertification/prior authorization required. 90 days/non par/benefit period.                                                                                                                      |
+| If you have a hospital stay                                               | Physician/surgeon fees             | 10% coinsurance                                 | Not covered                                        | Precertification/prior authorization required                                                                                                                                                       |
+| If you need mental health, behavioral health, or substance abuse services | Outpatient services                | $20 copayment/visit Deductible does not apply.  | Not covered                                        | Outpatient Services: None. Inpatient Services:Precertification/prior authorization required, 90 days/non par/benefit period.                                                                        |
+| If you need mental health, behavioral health, or substance abuse services | Inpatient services                 | 10% coinsurance                                 | Not covered                                        | Outpatient Services: None. Inpatient Services:Precertification/prior authorization required, 90 days/non par/benefit period.                                                                        |
+
+MOSHANNON VALLEY EMS SBC ID: 94627
+
+Page 3 of 6
+
+| Common Medical                                     |                                           | What You Will Pay                                       | What You Will Pay                                  | Limitations, Exceptions, & Other Important Information                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------------------------|-------------------------------------------|---------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Common Medical                                     | Services You May Need                     | Participating Provider (You will pay the least)         | Non-Participating Provider (You will pay the most) | Limitations, Exceptions, & Other Important Information                                                                                                                                                                                                                                                                                                                                                    |
+| If you are pregnant                                | Office visits                             | No charge for prenatal exams Deductible does not apply. | Not covered                                        | Pregnancy office visits: None. Cost sharing does not apply for preventive services. Maternity care may include tests and services as described elsewhere in the SBC (i.e., ultrasound). Depending on the type of services, a copayment, coinsurance or deductible may apply. Inpatient professional and facility services: Precertification/prior authorization required, 90 days/non par/benefit period. |
+| If you are pregnant                                | Childbirth/delivery professional services | 10% coinsurance                                         | Not covered                                        |                                                                                                                                                                                                                                                                                                                                                                                                           |
+| If you are pregnant                                | Childbirth/delivery facility services     | 10% coinsurance                                         | Not covered                                        |                                                                                                                                                                                                                                                                                                                                                                                                           |
+| If you need help recovering or other special needs | Home health care                          | No charge Deductible does not apply.                    | Not covered                                        | None.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| If you need help recovering or other special needs | Rehabilitation services                   | $35 copayment/visit Deductible does not apply.          | Not covered                                        | None                                                                                                                                                                                                                                                                                                                                                                                                      |
+| If you need help recovering or other special needs | Habilitation services                     | $35 copayment/visit Deductible does not apply.          | Not covered                                        | None                                                                                                                                                                                                                                                                                                                                                                                                      |
+| If you need help recovering or other special needs | Skilled nursing care                      | 10% coinsurance                                         | Not covered                                        | 60 days/period of confinement/person                                                                                                                                                                                                                                                                                                                                                                      |
+| If you need help recovering or other special needs | Durable medical equipment                 | No charge Deductible does not apply.                    | Not covered                                        | None.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| If you need help recovering or other special needs | Hospice services                          | No charge Deductible does not apply.                    | Not covered                                        | None.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| If your child needs dental or eye                  | Children's eye exam                       | No charge Deductible does not apply.                    | Not covered                                        | 1 exam/member/benefit period.                                                                                                                                                                                                                                                                                                                                                                             |
+| If your child needs dental or eye                  | Children's glasses                        | Not covered                                             | Not covered                                        | None                                                                                                                                                                                                                                                                                                                                                                                                      |
+| If your child needs dental or eye                  | Children's dental check-up                | Not covered                                             | Not covered                                        | None                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+MOSHANNON VALLEY EMS SBC ID: 94627
+
+Page 4 of 6
+
+## Excluded Services &amp; Other Covered Services:
+
+## Services Your Plan Generally Does NOT Cover (Check your policy or plan document for more information and a list of any other excluded services.)
+
+- Acupuncture
+- Chiropractic Care
+- Cosmetic Surgery
+- Dental Care (Adult)
+- Hearing Aids
+- Infertility Treatment
+- Long-Term Care
+- Non-Emergency Care When Traveling Outside the U.S.
+
+## Other Covered Services (Limitations may apply to these services. This isn't a complete list. Please see your plan document.)
+
+- Bariatric Surgery
+- Routine Eye Care (Adult)
+
+Your Rights to Continue Coverage: There are agencies that can help if you want to continue your coverage after it ends. The contact information for those agencies is: The U.S. Department of Labor, Employee Benefits Security Administration at 1-866-444-EBSA (3272) or www.dol.gov/agencies/ebsa, or the U.S Department of Health and Human Services at 1-877-267-2323 x61565 or www.cms.gov/marketplace/about/oversight. Other coverage options may be available to you too, including buying individual insurance coverage through the Health Insurance Marketplace. For more information about the Marketplace, visit www.HealthCare.gov or call 1-800318-2596.
+
+Your Grievance and Appeals Rights: There are agencies that can help you if you have a complaint against your plan for a denial of a claim. This complaint is called a grievance or appeal. For more information about your rights, look at the explanation of benefits you will receive for that medical claim. Your plan documents also provide complete information on how to submit a claim, appeal, or a grievance for any reason to your plan. For more information about your rights, this notice, or assistance, contact the Department of Labor's Employee Benefits Security Administration at 1-866-444 EBSA (3272) or www.dol.gov/agencies/ebsa, or the Pennsylvania Insurance Department at 1-877-881-6388 or www.pa.gov/agencies/insurance.
+
+## Does this plan provide Minimum Essential Coverage?  Yes.
+
+Minimum Essential Coverage generally includes plans, health insurance available through the Marketplace or other individual market policies, Medicare, Medicaid, CHIP, TRICARE, and certain other coverage. If you are eligible for certain types of Minimum Essential Coverage, you may not be eligible for the premium tax credit.
+
+## Does this plan meet Minimum Value Standards?  Yes.
+
+If your plan doesn't meet the Minimum Value Standard, you may be eligible for a premium tax credit to help you pay for a plan through the Marketplace.
+
+## Language Access Services:
+
+To access our Language helpline, please call 1-800-447-4000.
+
+whitespace
+
+-------------------To see examples of how this plan might cover costs for a sample medical situation, see the next section.-------------------
+
+- Private-Duty Nursing
+- Routine Foot Care
+- Weight Loss Programs
+
+MOSHANNON VALLEY EMS SBC ID: 94627
+
+Page 5 of 6
+
+## About these Coverage Examples:
+
+<!-- image -->
+
+This is not a cost estimator. Treatments shown are just examples of how this plan might cover medical care. Your actual costs will be different depending on the actual care you receive, the prices your providers charge, and many other factors. Focus on the cost sharing amounts (deductibles, copayments and coinsurance) and excluded services under the plan. Use this information to compare the portion of costs you might pay under different health plans. Please note these coverage examples are based on self-only coverage.
+
+| Peg is Having a Baby (9 months of in-network pre-natal care and a hospital delivery)   | Peg is Having a Baby (9 months of in-network pre-natal care and a hospital delivery)   | Managing Joe's type 2 Diabetes (a year of routine in-network care of a well- controlled condition)   | Managing Joe's type 2 Diabetes (a year of routine in-network care of a well- controlled condition)   | Mia's Simple Fracture (in-network emergency room visit and follow up care)   | Mia's Simple Fracture (in-network emergency room visit and follow up care)   |
+|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| The plan's overall deductible                                                          | $250                                                                                   | The plan's overall deductible                                                                        | $250                                                                                                 | The plan's overall deductible                                                | $250                                                                         |
+| Specialist copayment                                                                   | $35                                                                                    | Specialist copayment                                                                                 | $35                                                                                                  | Specialist copayment                                                         | $35                                                                          |
+| Hospital (facility) coinsurance                                                        | 10%                                                                                    | Hospital (facility) coinsurance                                                                      | 10%                                                                                                  | Hospital (facility) coinsurance                                              | 10%                                                                          |
+| Other coinsurance                                                                      | 0%                                                                                     | Other coinsurance                                                                                    | 0%                                                                                                   | Other coinsurance                                                            | 0%                                                                           |
+
+## This EXAMPLE event includes services like:
+
+Specialist office visits (prenatal care)
+
+Childbirth/Delivery Professional Services
+
+Childbirth/Delivery Facility Services
+
+Diagnostic tests (ultrasounds and blood work)
+
+Specialist visit (anesthesia)
+
+## This EXAMPLE event includes services like:
+
+Primary care physician office visits (including disease education)
+
+Diagnostic tests (blood work)
+
+Prescription drugs
+
+Durable medical equipment (glucose meter)
+
+## This EXAMPLE event includes services like:
+
+Emergency room care (including medical supplies)
+
+Diagnostic test (x-ray)
+
+Durable medical equipment (crutches) Rehabilitation services (physical therapy)
+
+| Total Example Cost              | $12,700            | Total Example Cost              | $5,600             | Total Example Cost              | $2,800             |
+|---------------------------------|--------------------|---------------------------------|--------------------|---------------------------------|--------------------|
+| In this example, Peg would pay: |                    | In this example, Joe would pay: |                    | In this example, Mia would pay: |                    |
+| Cost Sharing                    | Cost Sharing       | Cost Sharing                    | Cost Sharing       | Cost Sharing                    | Cost Sharing       |
+| Deductibles                     | $250               | Deductibles                     | $250               | Deductibles                     | $250               |
+| Copayments                      | $10                | Copayments                      | $1,685             | Copayments                      | $285               |
+| Coinsurance                     | $1,203             | Coinsurance                     | $0                 | Coinsurance                     | $0                 |
+| What isn't covered              | What isn't covered | What isn't covered              | What isn't covered | What isn't covered              | What isn't covered |
+| Limits or exclusions            | $0                 | Limits or exclusions            | $0                 | Limits or exclusions            | $0                 |
+| The total Peg would pay is      | $1,463             | The total Joe would pay is      | $1,935             | The total Mia would pay is      | $535               |
+
+blank space The plan would be responsible for the other costs of these EXAMPLE covered services.
+
+MOSHANNON VALLEY EMS SBC ID: 94627
+
+Page 6 of 6
+
+## Discrimination is against the law
+
+Geisinger Health Plan compl LHV with applicable federal civil rights laws and do HV not discriminate on the basis of race, color, national origin, age, disability or sex (including sex characteristics, intersex traits, pregnancy or related conditions, sexual orientation, gender identity and sex stereotypes). Geisinger Health Plan does not exclude people or treat them differently because of race, color, national origin, age, disability, sex, gender identity or sexual orientation.
+
+Geisinger Health Plan:
+
+- Provides people with disabilities reasonable modifications and free appropriate auxiliary aids and services to communicate effectively with us, such as:
+- » Qualified sign language interpreters
+- » Written information in other formats (large print, audio, accessible electronic formats, other formats)
+- Provides free language services to people whose primary language is not English, such as:
+- » Qualified interpreters
+- » Information written in other languages
+
+If you need reasonable modifications, appropriate auxiliary aids and services or language assistance services, call Geisinger Health Plan at 800-447-4000 or TTY: 711.
+
+If you believe that Geisinger Health Plan has failed to provide these services or discriminated in another way on the basis of race, color, national origin, age, disability, sex, gender identity or sexual orientation, you can file a grievance with:
+
+Civil Rights Grievance Coordinator Geisinger Health Plan Appeals Department
+
+100 N. Academy Ave., Danville, PA 17822-3220 Phone: 866-577-7733, TTY: 711 Fax: 570-271-7225 ghpcivilrights@thehealthplan.com
+
+You can file a grievance in person or by mail, fax or email. If you need help filing a grievance, the civil rights grievance coordinator is available to help you.
+
+You can also file a civil rights complaint with the U.S. Department of Health and Human Services, Office for Civil Rights electronically through the Office for Civil Rights Complaint Portal, available at https://ocrportal.hhs.gov/ocr/portal/lobby.jsf, or by mail or phone at:
+
+U.S. Department of Health and Human Services 200 Independence Ave. SW, Room 509F HHH Building, Washington, DC 20201 Phone: 800-368-1019, 800-537-7697 (TDD)
+
+Complaint forms are available at http://www.hhs.gov/ocr/office/file/index.html.
+
+GHP NDI update 5/2025
+
+## Notice of Availability of Language Assistance Services and Auxiliary Aids and Services
+
+ATTENTION: If you speak English, free language assistance services are available to you. Appropriate auxiliary aids and services to provide information in accessible formats are also available free of charge. Call 1-800-447-4000 (TTY: 711) or speak to your provider. ATENCIÓN: Si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. También están disponibles de forma gratuita ayuda y servicios auxiliares apropiados para proporcionar información en formatos accesibles. Llame al 1-800447-4000 (TTY: 711) o hable con su proveedor. ࣹ რΚ ࣠ڕ ൞ᎅ [ խ ֮ ] Δ ݺ ଚ אױ ੡൞༼ࠎ ܍ ၄፿ ߢ ࠰ ࣚܗ ೭ΖՈ ܍אױ ၄༼ࠎᔞᅝऱ ᎖ ܗ ՠࠠፖ ࣚ ೭Δ א ྤᎽᡶ௑ ڤ ༼ࠎᇷಛΖᓮીሽ 1-800-447-4000 ΰ TTY Κ 711 α ࢨ ፖ ൞ऱ༼ࠎृಘᓵΖ ʨʬʲʨʹʲʢʥʶ ʯʲʰʲʷ ʱʠʥʥ ʱʲʱʩʥʥʸʲʱ ʳʬʩʤ ʪʠʸʴʹ ʲʨʱʩʦʮʥʠ ʠʣ ʯʲʰʲʦ  ʹʩʣʩʠ ʨʣʲʸ ʸʩʠ ʡʩʥʠ  ʢʰʥʨʫʠ ʠ ʯʩʠ ʲʩʶʠʮʸʠʴʰʩʠ ʯʬʲʨʹʥʶ ʥʶ ʩʣʫ ʱʲʱʩʥʥʸʲʱ ʯʥʠ ʳʬʩʤ ʲʫʩʬʡʠʢʥʶ ʲʢʩʨʩʥʰ  ʪʩʩʠ ʸʠʴ ʯʸʲʥʥ ʨʴʥʸ  ʬʠʶʴʠ ʯʥʴ ʩʩʸʴ ʨʬʲʨʹʲʢʥʶ ʪʩʥʠ ʯʸʲʥʥ ʯʨʠʮʸʠʴ ʲʫʩʬʢʰʲʢʥʶ (TTY: 711) 1-800-447-4000 ʸʲʣʩʩʥʥ ʕ ʠʸ˝ ʸʲʩʩʠ ʥʶ ʨʣʲʸ ʸʲʣʠ ȼɇɂɆȺɇɂȿ  ȿɫɥɢ ɜɵ ɝɨɜɨɪɢɬɟ ɧɚ ɪɭɫɫɤɢɣ  ɜɚɦ ɞɨɫɬɭɩɧɵ ɛɟɫɩɥɚɬɧɵɟ ɭɫɥɭɝɢ ɹɡɵɤɨɜɨɣ ɩɨɞɞɟɪɠɤɢ  ɋɨɨɬɜɟɬɫɬɜɭɸɳɢɟ ɜɫɩɨɦɨɝɚɬɟɥɶɧɵɟ ɫɪɟɞɫɬɜɚ ɢ ɭɫɥɭɝɢ ɩɨ ɩɪɟɞɨɫɬɚɜɥɟɧɢɸ ɢɧɮɨɪɦɚɰɢɢ ɜ ɞɨɫɬɭɩɧɵɯ ɮɨɪɦɚɬɚɯ ɬɚɤɠɟ ɩɪɟɞɨɫɬɚɜɥɹɸɬɫɹ ɛɟɫɩɥɚɬɧɨ  ɉɨɡɜɨɧɢɬɟ ɩɨ ɬɟɥɟɮɨɧɭ -800-447-4000 (TTY: 711) ɢɥɢ ɨɛɪɚɬɢɬɟɫɶ ɤ ɫɜɨɟɦɭ ɩɨɫɬɚɜɳɢɤɭ ɭɫɥɭɝ ϪϳΑϧΗ ΔϳϧΎΟϣϟ΍ ΔϳϭϐϠϟ΍ ΓΩϋΎγϣϟ΍ ΕΎϣΩΧ ϙϟ έϓϭΗΗγϓ ˬΔϳΑέόϟ΍ ΔϐϠϟ΍ ΙΩΣΗΗ Εϧϛ ΍Ϋ· ϝ΋Ύγϭ έϓϭΗΗ Ύϣϛ Ύ˱ϧΎΟϣ ΎϬϳϟ· ϝϭλϭϟ΍ ϥϛϣϳ ΕΎϘϳγϧΗΑ ΕΎϣϭϠόϣϟ΍ έϳϓϭΗϟ ΔΑγΎϧϣ ΕΎϣΩΧϭ ΓΩϋΎγϣ ϡϗέϟ΍ ϰϠϋ ϝλΗ΍ (1-800-447-4000) (TTY: 711) ΔϣΩΧϟ΍ ϡΩϘϣ ϰϟ· ΙΩΣΗ ϭ΃ ACHTUNG: Wenn Sie Deutsch sprechen, stehen Ihnen kostenlose Sprachassistenzdienste zur Verfügung. Entsprechende Hilfsmittel und Dienste zur Bereitstellung von Informationen in barrierefreien Formaten stehen ebenfalls kostenlos zur Verfügung. Rufen Sie 1-800-447-4000 (TTY: 711) an oder sprechen Sie mit Ihrem Provider. /Ѭ8 é  1Ӄ u b ҥ n nói ti Ӄ ng Vi Ӌ t, chúng tôi cung c ҩ p mi Ӊ n phí các d ӏ ch v ө h ӛ tr ӧ ngôn ng ӳ . Các h ӛ tr ӧ d ӏ ch v ө phù h ӧS ÿӇ cung c ҩS WK{QJ WLQ WKHR FiF ÿӏ nh d ҥ ng d Ӊ ti Ӄ p c ұQ FǊQJ ÿѭӧ c cung c ҩ p mi Ӊ n phí. Vui lòng g ӑ i theo s ӕ 1-800-4471Jѭӡ i khuy Ӄ t t ұ t: 1-711) ho һF WUDR ÿә i v ӟL QJѭӡ i cung c ҩ p d ӏ ch v ө c ӫ a b ҥ n. ATTENTION : Si vous parlez Français, des services d'assistance linguistique gratuits sont à votre disposition. Des aides et services auxiliaires appropriés pour fournir des informations dans des formats accessibles sont également disponibles gratuitement. Appelez le 1-800-447-4000 (TTY: 711) ou parlez à votre fournisseur. ATTENZIONE: se parli Italiano, sono disponibili servizi di assistenza linguistica gratuiti. Sono inoltre disponibili gratuitamente ausili e servizi ausiliari adeguati per fornire informazioni in formati accessibili. Chiama l'1-800-447-4000 (tty: 711) o parla con il tuo fornitore. .
+
+渂汞 : [ 穢剳檺 ] 庂 斲殯穞柢垚 凃殶 怺巒 檾檺 滆毖 昢捊枪庂 決殯穞柪 朞 沎枻城埪 決殯 儆垫穢 笛柣求嵢 洛懺庂 洢击穞垚 洇洎穢 懺浶 匶割 愕 昢捊枪壊 怺巒嵢 洢击夯城埪 . 1-800-447-4000 (TTY: 711) 憎求嵢 洊筚穞其喞 昢捊枪 洢击櫋熺櫖 怾汞穞柳柢欪 .
+
+ȯĭċ ĉŐ : ĒĮĉ çč ĮĞŃĉı ďļĕćĸ Ğœ , ćļ çčø ĸ Įĕð Įċń ĚIJʋ ĐĭĜĭ ĝĞĭĒćĭ ĝĸęĭð Ń êčĕɩ Ğļćı Ğœ͡ ĝIJĕĐ ŮĭŝčļŃ đŐ ÿĭċøĭēı Ůĉĭċ øēċĸ ø ĸ Įĕð êčĒIJƅ ĝĞĭĒø ĝĭĊċ õē ĝĸęĭð Ł Đı Įċń ĚIJʋ êčĕɩ Ğœ͡ 1-800-447-4000 (TTY: 711) čē øĺĕ øēŐ Ēĭ æčċĸ Ůĉĭćĭ ĝĸ ďĭć øēŐ͡ ƚ]hW 8Xs : Ks S\p ȤkK^hSj Zs\_Sh es Ss \YS [hchD] deh]Sh dpahB S\h^h \hN° ;X\_ƞV Jp . ]sƊ] AƈL\_^ deh] 7Wp &gt;ƈdpidZ\_ Yr\±N\h5 \heSj ȶl^ XhPah \hN°Wj dpahB XR iaWh Ⱥl ƣ]p ;X\_ƞV Jp . 1-800-447-4000 (TTY: 711) X^ Dr\_ D^s 7Tah
+
+S\h^h ̆UhSh dhTp ahS D^s .
+
+ĝĭęĊĭċ : ĒĮĉ ćčĭéŃ ċĸčĭĕı ĐĭĜĭ ďļ̵ċIJŠ̢þ Đċĸ ćčĭéŃøĭ ĕĭĮú Įċ : ĚIJʋ ĐĭĮĜø ĝĞĭĒćĭ ĝĸęĭĞŝ êčĕɩ þċŀ͡ čŠŁýĒļƶ ąĭŁýĭĞŝđĭ ÿĭċøĭēı Ůĉĭċ úċŊ êčĒIJƅ ĝĞĭĒćĭ ē ĝĸęĭĞŝ čĮċ Įċń ĚIJʋ êčĕɩ þċŀ͡ 1-800-447-4000 (TTY: 711) đĭ Ďļċ úċIJŊĞļĝŀ ęĭ ç̫ċļ ŮĉĭĒøĝŁú ø IJ ēĭ AKIYESI: Ti o ba s ӑ Yorùbá, aw ӑ n i ৢҽ iranl ӑ w ӑ ede ӑ f ҽ wa fun ӑ . Aw ӑ n iranl ӑ w ӑ iranl ӑ w ӑ ti o y ҽ ati aw ӑ n i ৢҽ lati pese alaye ni aw ӑ n ӑ na kika wiw ӑ le tun wa laisi idiyele. Pe 1-800-447-4000 (TTY: 711) tabi s ӑ r ӑ si olupese r ҽ .
+
+. , ဳ၍ဳ၁ၓ၊ၔျ၇ဳ၈ ဳ၈ၐ၅ဳၒ ၀ဳ၎ဳ၇၊ၔျ၇၊ၔ၈၈့ၒွၓ : မဳၑ။့ှွ ၃ၙဳ။ဳၕ့ၒ၊ၐ ၑ့၄့၁ဳၑၐ၊ၔျ၇၊ၔ၈ ၑၒဳ၆ဳံၒ့ှ၊ၔ ၂ဳ၆ဳ၌ဳၑဳ၏ဿဳ၈ ၗြဳ၈ံဳ၁ ၆ွ၍၊ၓ၈့ၒ၈ ၊ၔ ၀ဳ၎ဳ၇၊ၔျ၇၊ၔ၈၈့ၒ် ၈၊ၔ၇၈၌့၏ ၑၒဳ၆ဳံၒၐ၊ၔ၆ ့၈ ဳ၈ၐ၅ဳၒ : ဋဳ၈ဵဳ၂ဳၒ့ၖ 1-800-4474000 ၂့၎ဳဿ၊၏ဳ၂ဳ၆ဳၒ၊ၐ (TTY ူ 711) ၁ဳ၆ ဿ၊၏့ၖ ဖ့ၒ ၆ဳၑဳ၁ဳၒဳၒွ ၂့ၑ :
+
+úċIJŊĞļĝŀ͡ ဝဧလဆဉဥဝဧဎယဝဧရ ညျ့ ဿ၊၏၊ၔ၆ ့ၖ ၂ဳ၇့ၒ့၈ ဉ၊ၔၖ ၁ဳၒ၊၄ ့ၖ ၗဵၑၐ့ှ ှ့းၐဳ၁ဳ၈

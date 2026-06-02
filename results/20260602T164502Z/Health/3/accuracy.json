@@ -1,0 +1,44 @@
+{
+  "fields_evaluated": 27,
+  "fields_skipped_empty": 24,
+  "fields_found": 25,
+  "fields_missing": 2,
+  "recall": 0.9259,
+  "hit_fields": [
+    "Carrier Name",
+    "Plan Name",
+    "In-Network Single Deductible",
+    "In-Network Family Deductible",
+    "In-Network Single OOP Max",
+    "In-Network Family OOP Max",
+    "In-Network Coinsurance",
+    "In-Network PCP Visit",
+    "In-Network Specialist Visit",
+    "In-Network Urgent Care Visit",
+    "In-Network ER Visit",
+    "In-Network Preventive Visit",
+    "In-Network Inpatient Surgery",
+    "In-Network Newborn Delivery",
+    "In-Network Major Diagnostics",
+    "In-Network Generic RX",
+    "In-Network Brand RX",
+    "In-Network Tier 3 RX",
+    "In-Network Tier 4 RX",
+    "In-Network Tier 5 RX",
+    "Plan Year",
+    "Network Type",
+    "Network Name",
+    "Member Website",
+    "Customer Service Phone Number"
+  ],
+  "misses": [
+    {
+      "field": "In-Network Outpatient Surgery",
+      "expected": "Non-Hospital: $300 per visit / Hospital: Deductible, then $400 per visit"
+    },
+    {
+      "field": "In-Network Mail Order RX",
+      "expected": "$30 / Deductible, then $100 / Deductible, then $150 / Deductible, then 50% coinsurance up to $200 maximum / Deductible, then 50% coinsurance up to $300 maximum"
+    }
+  ]
+}
