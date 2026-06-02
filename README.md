@@ -296,5 +296,6 @@ curl -s http://127.0.0.1:8002/ | jq .build
 `benchmark_docling.py` runs Docling on `test_fixtures/` PDFs and reports speed plus field-level text recall vs the JSON fixtures. Use it to tune GPU settings, not as the production API.
 
 ```bash
-python benchmark_docling.py --device cuda --layout-batch-size 64 --force-backend-text --warmup
+python benchmark_docling.py --device cuda --layout-batch-size 64 --warmup
+# Faster text-only baseline: --ocr off --force-backend-text
 ```

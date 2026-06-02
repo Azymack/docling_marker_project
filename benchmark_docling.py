@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Benchmark Docling on insurance PDF fixtures (text-selectable PDFs assumed).
+Benchmark Docling on insurance PDF fixtures.
 
 Measures:
   - Pipeline initialization time (one-time model load)
   - Per-document conversion time and pages/sec
   - Field-level text recall vs ground-truth JSON in test_fixtures/
 
-Run on GPU server (CUDA), after installing dependencies — see README.md.
+Default OCR mode is **full** (full-page OCR). Use --ocr off|auto for faster runs.
 
 Example:
-  python benchmark_docling.py --device cuda --output-dir results
-  python benchmark_docling.py --device cuda --layout-batch-size 64 --table-mode accurate
+  python benchmark_docling.py --device cuda --warmup
+  python benchmark_docling.py --device cuda --ocr off --force-backend-text --warmup
 """
 
 from __future__ import annotations
@@ -31,11 +31,13 @@ from docling.datamodel.base_models import InputFormat
 
 from docling_pipeline import (
     ConversionError,
+    OcrMode,
     PipelineConfig,
     build_converter,
     convert_pdf,
     cuda_info,
     initialize_converter,
+    parse_ocr_mode,
 )
 
 _log = logging.getLogger("benchmark_docling")
@@ -236,6 +238,7 @@ def run_benchmark(args: argparse.Namespace) -> int:
     _log.info("Found %d PDF fixture(s) under %s", len(fixtures), fixtures_root)
     _print_cuda_info()
 
+    ocr_mode: OcrMode = parse_ocr_mode(args.ocr)
     pipeline_config = PipelineConfig(
         device=args.device,
         layout_batch_size=args.layout_batch_size,
@@ -244,7 +247,9 @@ def run_benchmark(args: argparse.Namespace) -> int:
         do_table_structure=not args.no_tables,
         table_mode=args.table_mode,
         force_backend_text=args.force_backend_text,
+        ocr_mode=ocr_mode,
     )
+    _log.info("OCR mode: %s", ocr_mode)
     converter = build_converter(pipeline_config)
 
     init_seconds = initialize_converter(converter)
@@ -383,8 +388,7 @@ def run_benchmark(args: argparse.Namespace) -> int:
         total_pages=total_pages,
         overall_pages_per_second=overall_pps,
         config={
-            "ocr_mode": "off",
-            "assumption": "text-selectable PDFs",
+            "ocr_mode": ocr_mode,
             "layout_batch_size": args.layout_batch_size,
             "ocr_batch_size": args.ocr_batch_size,
             "table_batch_size": args.table_batch_size,
@@ -408,7 +412,8 @@ def run_benchmark(args: argparse.Namespace) -> int:
 
 def _print_summary(summary: BenchmarkSummary) -> None:
     print("\n" + "=" * 72)
-    print("DOCLING BENCHMARK SUMMARY (text-selectable PDFs, OCR off)")
+    ocr_mode = summary.config.get("ocr_mode", "off")
+    print(f"DOCLING BENCHMARK SUMMARY (ocr={ocr_mode})")
     print("=" * 72)
     print(f"Output folder     : {summary.output_dir}")
     print(f"Device            : {summary.device}")
@@ -469,10 +474,16 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
         help="Layout model GPU batch size (increase if VRAM allows)",
     )
     p.add_argument(
+        "--ocr",
+        default="full",
+        choices=["off", "auto", "full"],
+        help="OCR mode: off (embedded text), auto (image regions), full (full-page OCR, default)",
+    )
+    p.add_argument(
         "--ocr-batch-size",
         type=int,
         default=4,
-        help="Unused when OCR is off; kept for API compatibility",
+        help="OCR batch size when OCR is enabled",
     )
     p.add_argument(
         "--table-batch-size",
