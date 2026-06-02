@@ -284,8 +284,12 @@ console.log(metadata.ocr_mode, metadata.convert_seconds);
 
 ## Troubleshooting
 
+See [HEALTH4_ANALYSIS.md](HEALTH4_ANALYSIS.md) for why SBC PDFs (e.g. Health/4) can have missing headers or broken tables.
+
 | Problem | Check |
 |---------|--------|
+| Missing SBC header / plan name / dates | `include_page_furniture=true` (default) |
+| Broken table columns on SBC forms | Visual-grid limit; use `ocr=off`, not `ocr=full` |
 | Internal Server Error | `journalctl -u docling-pdf -f` while reproducing |
 | Same output for all `ocr` values | Response header `X-Docling-OCR-Mode` — must change per request |
 | Missing carrier name in image | Try `ocr=auto`, then `ocr=full` |

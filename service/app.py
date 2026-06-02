@@ -38,7 +38,7 @@ from service.settings import ServiceSettings
 
 _log = logging.getLogger(__name__)
 # Bump when deploying; shown on GET / for version checks
-SERVICE_BUILD = "2026-05-28-ocr-modes-v2"
+SERVICE_BUILD = "2026-06-02-furniture-export-v3"
 _settings = ServiceSettings()
 _base_config = PipelineConfig.from_env()
 
@@ -104,55 +104,21 @@ def _response_headers(result: ConvertResult, *, ocr_mode: OcrMode) -> dict[str, 
     }
 
 
-def _convert_locked(pdf_path: Path, *, ocr_mode: OcrMode) -> ConvertResult:
+def _convert_locked(
+    pdf_path: Path,
+    *,
+    ocr_mode: OcrMode,
+    include_page_furniture: bool,
+) -> ConvertResult:
     converter = _ensure_converter(ocr_mode)
     with _convert_lock:
-        result = convert_pdf(converter, pdf_path)
+        result = convert_pdf(
+            converter,
+            pdf_path,
+            include_furniture=include_page_furniture,
+        )
         result.ocr_mode = ocr_mode
         return result
-
-
-def _extract_page_furniture_lines(doc_dict: dict | None) -> list[str]:
-    """Collect page header/footer text from Docling JSON export."""
-    if not isinstance(doc_dict, dict):
-        return []
-    texts = doc_dict.get("texts", [])
-    if not isinstance(texts, list):
-        return []
-
-    lines: list[str] = []
-    seen: set[str] = set()
-    for item in texts:
-        if not isinstance(item, dict):
-            continue
-        if item.get("content_layer") != "furniture":
-            continue
-        if item.get("label") not in {"page_header", "page_footer"}:
-            continue
-
-        text = str(item.get("text", "")).strip()
-        if not text or text in seen:
-            continue
-        seen.add(text)
-        lines.append(text)
-
-    return lines
-
-
-def _merge_page_furniture(markdown: str, doc_dict: dict | None, include: bool) -> str:
-    """Prepend page furniture text so required header fields are preserved."""
-    if not include:
-        return markdown
-
-    furniture_lines = _extract_page_furniture_lines(doc_dict)
-    if not furniture_lines:
-        return markdown
-
-    furniture_block = "\n".join(furniture_lines).strip()
-    body = markdown.lstrip()
-    if not body:
-        return furniture_block
-    return f"{furniture_block}\n\n{body}"
 
 
 @asynccontextmanager
@@ -322,18 +288,18 @@ async def convert(
             raise HTTPException(status_code=400, detail=str(exc)) from exc
 
         try:
-            result = _convert_locked(tmp_path, ocr_mode=ocr_mode)
+            result = _convert_locked(
+                tmp_path,
+                ocr_mode=ocr_mode,
+                include_page_furniture=include_page_furniture,
+            )
         except ConversionError as exc:
             raise HTTPException(
                 status_code=422,
                 detail={"message": str(exc), "status": exc.status, "pages": exc.pages},
             ) from exc
 
-        output_text = _merge_page_furniture(
-            result.markdown,
-            result.doc_dict,
-            include_page_furniture,
-        )
+        output_text = result.markdown
 
         meta = ConvertMetadata(
             status=result.status,

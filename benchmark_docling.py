@@ -7,7 +7,7 @@ Measures:
   - Per-document conversion time and pages/sec
   - Field-level text recall vs ground-truth JSON in test_fixtures/
 
-Default OCR mode is **full** (full-page OCR). Use --ocr off|auto for faster runs.
+Default OCR mode is **off** (embedded text). Use --ocr auto|full only when needed.
 
 Example:
   python benchmark_docling.py --device cuda --warmup
@@ -274,7 +274,11 @@ def run_benchmark(args: argparse.Namespace) -> int:
         t1 = time.perf_counter()
         try:
             try:
-                result = convert_pdf(converter, fx.pdf_path)
+                result = convert_pdf(
+                    converter,
+                    fx.pdf_path,
+                    include_furniture=not args.no_page_furniture,
+                )
             except ConversionError as conv_exc:
                 elapsed = time.perf_counter() - t1
                 doc_results.append(
@@ -389,6 +393,7 @@ def run_benchmark(args: argparse.Namespace) -> int:
         overall_pages_per_second=overall_pps,
         config={
             "ocr_mode": ocr_mode,
+            "include_page_furniture": not args.no_page_furniture,
             "layout_batch_size": args.layout_batch_size,
             "ocr_batch_size": args.ocr_batch_size,
             "table_batch_size": args.table_batch_size,
@@ -475,9 +480,14 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     )
     p.add_argument(
         "--ocr",
-        default="full",
+        default="off",
         choices=["off", "auto", "full"],
-        help="OCR mode: off (embedded text), auto (image regions), full (full-page OCR, default)",
+        help="OCR mode: off=embedded text (default), auto=image regions, full=full-page OCR",
+    )
+    p.add_argument(
+        "--no-page-furniture",
+        action="store_true",
+        help="Exclude page headers/footers from markdown (not recommended for SBC PDFs)",
     )
     p.add_argument(
         "--ocr-batch-size",

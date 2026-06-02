@@ -159,7 +159,28 @@ def initialize_converter(converter: DocumentConverter) -> float:
     return time.perf_counter() - t0
 
 
-def convert_pdf(converter: DocumentConverter, pdf_path: str | Path) -> ConvertResult:
+def export_document_markdown(document: Any, *, include_furniture: bool = True) -> str:
+    """
+    Export Docling document to markdown.
+
+    By default Docling exports BODY only, which drops page headers/footers
+  (SBC title, coverage period, plan name). Insurance PDFs need FURNITURE too.
+    """
+    from docling_core.types.doc.document import ContentLayer
+
+    if include_furniture:
+        layers = {ContentLayer.BODY, ContentLayer.FURNITURE}
+    else:
+        layers = {ContentLayer.BODY}
+    return document.export_to_markdown(included_content_layers=layers)
+
+
+def convert_pdf(
+    converter: DocumentConverter,
+    pdf_path: str | Path,
+    *,
+    include_furniture: bool = True,
+) -> ConvertResult:
     """Convert a PDF file to markdown."""
     path = Path(pdf_path)
     t0 = time.perf_counter()
@@ -180,7 +201,10 @@ def convert_pdf(converter: DocumentConverter, pdf_path: str | Path) -> ConvertRe
     if conv.status == ConversionStatus.PARTIAL_SUCCESS:
         warnings.append("partial_success_some_pages_failed")
 
-    markdown = conv.document.export_to_markdown()
+    markdown = export_document_markdown(
+        conv.document,
+        include_furniture=include_furniture,
+    )
     pps = round(pages / elapsed, 3) if elapsed > 0 and pages else None
 
     return ConvertResult(
