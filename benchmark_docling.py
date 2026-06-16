@@ -77,6 +77,45 @@ def _value_variants(value: str) -> list[str]:
     return list(dict.fromkeys(v for v in variants if v))
 
 
+def _compound_match(value: str, norm_doc: str, extracted_lower: str) -> bool:
+    """
+    For ' / '-separated compound values (e.g. '$20 / $90 / $130'), check whether
+    every component appears in the document as normalized text.
+
+    Insurance PDFs store multi-tier pricing across separate table rows, so the
+    combined string never appears verbatim.  If each individual amount is present
+    the data was extracted — only the ground-truth format differs.
+    """
+    parts = [p.strip() for p in value.split(" / ") if p.strip()]
+    if len(parts) < 2:
+        return False
+    for part in parts:
+        pv = _normalize_for_match(part)
+        if not pv:
+            continue
+        if pv not in norm_doc and pv not in extracted_lower:
+            return False
+    return True
+
+
+# Fields whose values are commonly rendered as images in insurance PDFs
+_IMAGE_LIKELY_FIELDS = {"Carrier Name", "Network Name"}
+
+
+def _miss_category(field: str, expected: str) -> str:
+    """Heuristic category for why a value might not appear in extracted text."""
+    if field in _IMAGE_LIKELY_FIELDS:
+        return "likely_image_text"
+    stripped = expected.strip()
+    if stripped.isdigit() and len(stripped) == 4:
+        return "year_in_coverage_period_image"
+    if " / " in expected:
+        return "slash_compound_value"
+    if re.search(r"\d[\-\.]\d{3}[\-\.]\d{4}", expected):
+        return "phone_format_variant"
+    return "unknown"
+
+
 def field_recall(
     ground_truth: dict[str, Any],
     extracted_text: str,
@@ -88,6 +127,7 @@ def field_recall(
     """
     norm_doc = _normalize_for_match(extracted_text)
     norm_doc_digits = _digits_only(extracted_text)
+    extracted_lower = extracted_text.lower()
 
     hits: list[str] = []
     misses: list[dict[str, str]] = []
@@ -108,14 +148,19 @@ def field_recall(
                 if variant in norm_doc_digits:
                     found = True
                     break
-            elif variant in norm_doc or variant in extracted_text.lower():
+            elif variant in norm_doc or variant in extracted_lower:
                 found = True
                 break
+
+        # Slash-separated compound values (e.g. "$20 / $90 / $130") appear as
+        # separate rows in PDF tables; try matching each component individually.
+        if not found and " / " in value:
+            found = _compound_match(value, norm_doc, extracted_lower)
 
         if found:
             hits.append(key)
         else:
-            misses.append({"field": key, "expected": value})
+            misses.append({"field": key, "expected": value, "category": _miss_category(key, value)})
 
     evaluated = len(hits) + len(misses)
     recall = (len(hits) / evaluated) if evaluated else 0.0
@@ -237,6 +282,14 @@ def run_benchmark(args: argparse.Namespace) -> int:
 
     _log.info("Found %d PDF fixture(s) under %s", len(fixtures), fixtures_root)
     _print_cuda_info()
+
+    if args.num_threads and args.num_threads > 0:
+        try:
+            import torch
+            torch.set_num_threads(args.num_threads)
+            _log.info("PyTorch CPU threads set to %d", args.num_threads)
+        except ImportError:
+            pass
 
     ocr_mode: OcrMode = parse_ocr_mode(args.ocr)
     pipeline_config = PipelineConfig(
@@ -513,10 +566,12 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
         help="Disable table structure extraction (faster, less accurate on tables)",
     )
     p.add_argument(
-        "--force-backend-text",
-        action="store_true",
-        help="Use embedded PDF text instead of layout-model text (text PDFs)",
+        "--no-force-backend-text",
+        dest="force_backend_text",
+        action="store_false",
+        help="Disable force_backend_text (use layout-model text instead of embedded PDF text)",
     )
+    p.set_defaults(force_backend_text=True)
     p.add_argument(
         "--num-threads",
         type=int,
