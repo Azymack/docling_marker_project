@@ -128,6 +128,8 @@ def field_recall(
     norm_doc = _normalize_for_match(extracted_text)
     norm_doc_digits = _digits_only(extracted_text)
     extracted_lower = extracted_text.lower()
+    # Space-collapsed doc for matching OCR artifacts like "BlueCross" vs "Blue Cross"
+    norm_doc_nospace = re.sub(r"\s+", "", norm_doc)
 
     hits: list[str] = []
     misses: list[dict[str, str]] = []
@@ -151,6 +153,13 @@ def field_recall(
             elif variant in norm_doc or variant in extracted_lower:
                 found = True
                 break
+            else:
+                # OCR sometimes merges words (e.g. "BlueCross" for "Blue Cross").
+                # Check space-collapsed forms when variant is long enough to be safe.
+                v_nospace = re.sub(r"\s+", "", variant)
+                if len(v_nospace) >= 8 and v_nospace in norm_doc_nospace:
+                    found = True
+                    break
 
         # Slash-separated compound values (e.g. "$20 / $90 / $130") appear as
         # separate rows in PDF tables; try matching each component individually.
